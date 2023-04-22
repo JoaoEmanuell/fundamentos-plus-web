@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url('../fonts/Montserrat/montserrat_montserratbold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-regular';
+    src: url('../fonts/Montserrat/montserrat_montserratregular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-number';
+    src: url('../fonts/Roboto/roboto_medium_numbers.ttf');
+}
+
+* {
+    font-family: 'Montserrat-bold', sans-serif;
+}
+
+:root {
+    --main-bg-color: #55730e;
+}
+
+.number {
+    font-family: 'Roboto-number', sans-serif;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+header {
+    background-color: var(--main-bg-color);
+    padding: 15px;
+}
+
+header img {
+    height: 85px;
+}
+
+main {
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.green {
+    color: var(--main-bg-color);
+}
+
+.green-button-last {
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-bg-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto-number';
+    font-weight: 800;
+    font-size: 30px;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+.green-button{
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-bg-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto-number';
+    font-weight: 800;
+    font-size: 30px;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+.green-button::before {
+    content: "";
+    position: absolute;
+    height: calc(100% - 30px);
+    width: 3px;
+    background-color: var(--main-bg-color);
+    top: 50%;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: -1;
+}
+
+.green-button:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 90px;
+    background-color: var(--main-bg-color);
+    border-radius: 0%;
+    top: calc(100% - 15px);
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: -5;
+}
+
+.green-button:last-child::after {
+    content: '';
+}
+
+.cycle-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 1s;
+    padding: 5px;
+    border-radius: 5px;
+} 
+
+.cycle-box:hover {
+    background-color: rgba(128, 128, 128, 0.171);
+}
+
+.cycle-box a {
+    align-self: flex-start;
+}
+  
+
+.p-title-cycle-box {
+    
+    margin-bottom: 0rem;
+    font-family: 'Montserrat-regular', sans-serif;
+    /*font-size: 15px;*/
+}
+
+.p-lesson-cycle-box {
+    
+    margin-bottom: 0rem;
+    color: var(--main-bg-color);
+    font-family: 'Montserrat-regular', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.div-cycles {
+    font-size: 20.6px;
+}
