@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Roboto-number';
+    src: url('../fonts/Roboto/roboto_medium_numbers.ttf');
+}
+
+:root {
+    --button-bg-color: #55730e;
+    --button-disabled-bg-color: #CED4BA;
+}
+
+.green-button-not-connected {
+    width: 50px;
+    height: 50px;
+    background-color: var(--button-bg-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto-number';
+    font-weight: 800;
+    font-size: 30px;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+.green-button{
+    width: 50px;
+    height: 50px;
+    background-color: var(--button-bg-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto-number';
+    font-weight: 800;
+    font-size: 30px;
+    text-decoration: none;
+    position: relative;
+    z-index: 0;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+.green-button::before {
+    content: "";
+    position: absolute;
+    height: calc(100% - 30px);
+    width: 3px;
+    background-color: var(--button-bg-color);
+    top: 50%;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: -1;
+}
+
+.green-button:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 90px;
+    background-color: var(--button-bg-color);
+    border-radius: 0%;
+    top: calc(100% - 15px);
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: -5;
+}
+
+.green-button:last-child::after {
+    content: '';
+}
+
+.green-button-disabled-not-connected {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: var(--button-disabled-bg-color);
+    border: 5px solid var(--button-disabled-bg-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto-number';
+    font-weight: 800;
+    font-size: 30px;
+    text-decoration: none;
+    position: relative;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+.green-button-disabled{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: var(--button-disabled-bg-color);
+    border-radius: 50%;
+    border: 5px solid var(--button-disabled-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto-number';
+    font-weight: 800;
+    font-size: 30px;
+    text-decoration: none;
+    position: relative;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+.green-button-disabled::before {
+    content: "";
+    position: absolute;
+    height: calc(100% - 30px);
+    width: 3px;
+    background-color: var(--button-disabled-bg-color);
+    top: 50%;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: -1;
+}
+
+.green-button-disabled:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 90px;
+    background-color: var(--button-disabled-bg-color);
+    border-radius: 0%;
+    top: calc(100% - 0px);
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: 0;
+}
+
+.green-button-disabled:last-child::after {
+    content: '';
+}
