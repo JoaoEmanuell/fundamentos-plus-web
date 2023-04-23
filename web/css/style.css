@@ -26,7 +26,7 @@ body {
 
 header {
     background-color: var(--main-bg-color);
-    padding: 15px;
+    padding: 30px;
 }
 
 header img {
@@ -41,4 +41,26 @@ main {
 
 .green {
     color: var(--main-bg-color);
+}
+
+.back-arrow {
+    height: 43px;
+    width: 43px;
+    transition: all 1s;
+    border-radius: 50%;
+}
+
+.back-arrow:hover {
+    background-color: rgba(158, 155, 155, 0.479);
+}
+
+.theme {
+    height: 43px;
+    width: 43px;
+    transition: all 1s;
+    border-radius: 50%;
+}
+
+.theme:hover {
+    background-color: rgba(158, 155, 155, 0.479);
 }
