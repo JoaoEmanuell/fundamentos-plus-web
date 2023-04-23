@@ -31,13 +31,19 @@ function start_page(main_box, data_json){
         const cycles = data.cycles;
         
         let count = 1;
+        let green_button_class = ''
         for (const cycle in cycles) {
             // Number button
             const number_button = document.createElement('a');
-            if (count !== Object.keys(cycles).length){
-                number_button.className = 'green-button';
+            if (cycles[cycle].unlocked) {
+                green_button_class = 'green-button';
             } else {
-                number_button.className = 'green-button-not-connected';
+                green_button_class = 'green-button-disabled';
+            }
+            if (count !== Object.keys(cycles).length){
+                number_button.className = green_button_class;
+            } else {
+                number_button.className = `${green_button_class}-not-connected`;
             }
             number_button.innerHTML = count;
 
