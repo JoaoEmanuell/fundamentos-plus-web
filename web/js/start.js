@@ -1,4 +1,8 @@
 function start_page(main_box, data_json){
+
+    // Clear main box
+    main_box.innerHTML = '';
+
     // Add title
     let div = document.createElement('div');
     div.className = 'container d-flex justify-content-center';
@@ -23,10 +27,10 @@ function start_page(main_box, data_json){
     // Cycles
 
     data_json.then((data) => {
-        let count = 1
         
         const cycles = data.cycles;
-    
+        
+        let count = 1;
         for (const cycle in cycles) {
             // Number button
             const number_button = document.createElement('a');
@@ -59,13 +63,20 @@ function start_page(main_box, data_json){
             div_to_cycle.className = 'mb-4 d-flex justify-content-center cycle-box';
             div_to_cycle.appendChild(number_button);
             div_to_cycle.appendChild(div_for_title_lesson);
+            div_to_cycle.id = count;
+            
+            // Click event
+            
+            div_to_cycle.addEventListener('click', () => {
+                cycle_page(main_box, data_json, div_to_cycle.id);
+            });
 
             // Add in align itens
         
             div_align_itens.appendChild(div_to_cycle);
 
             // Count
-            count += 1
+            count++;
         };
     });
 
