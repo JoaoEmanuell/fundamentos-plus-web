@@ -1,0 +1,112 @@
+{
+    "version": 1,
+    "cycles": {
+        "1": {
+            "unlocked": true,
+            "title": "Temas Panorâmicos",
+            "lessons": {
+                "O conselho de Deus": {
+                    "id": 1,
+                    "author": "Edmar Ferreira",
+                    "description": [
+                        "Fundamentos é um programa de ensino formado pelo conselho apostólico da igreja, sob responsabilidade dos pastores Marcos Moraes, Vanjo Souza, Edmar Ferreira, João Bium, Manoel Rocha e Mário Fagundes.",
+                        "O programa conta com várias plataformas e mídias para divulgar o ensino básico da Palavra de Deus de maneira uniforme a toda a igreja.",
+                        "Para cada lição, há vídeos, áudios e textos escritos correspondentes. Todos indexados pelo mesmo número.",
+                        "O Fundamentos possui um site: www.fundamentos.me. Nele estarão disponíveis todas as lições e mídias produzidas e disponibilizadas.",
+                        "Dúvidas e solicitações podem ser feitas pelo e-mail contato@fundamentos.me."
+                    ],
+                    "transcribed": "https://s3.sa-east-1.amazonaws.com/fundamentos.files/7e3a2ac318a3bcdbb6376f112abe9a2-o-conselho-de-deus.pdf",
+                    "video": "https://youtu.be/Z6ksxWXT8-I",
+                    "google-resumed": "https://podcasts.google.com/feed/aHRcHM6Ly9hbmNob3IuZmvcy82MzkODhhYy9wb2RjYXNL3Jzcw/episode/NTVjNzk4OGMtY2E5NyYTIxLTgyZTAtMWEzN2Q1NWZiYjZj?sa=X&ved=CAUQkfYCahcKEwjgucL-zr7-AhUAAAAAHQAAAAAQZg",
+                    "google-complete": "https://podcasts.google.com/feed/aHRcHM6Ly9hbmNob3IuZmvcy82MzkODhhYy9wb2RjYXNL3Jzcw/episode/MmQyY2RlYmQtOTZhYiZjEwLWFhNzMtNjA2NDhkMDg5NmM1?sa=X&ved=CAUQkfYCahcKEwjgucL-zr7-AhUAAAAAHQAAAAAQZg",
+                    "deezer-resumed": "https://deezer.page.link/9FdNxwo5kviCq8sR7",
+                    "deezer-complete": "https://deezer.page.link/VGyiQ6kmhUV4CmM36"
+                },
+                "Aprender, crescer e servir": {},
+                "Por que Jesus veio ao mundo?": {},
+                "O nascimento da igreja": {},
+                "Porta, caminho e alvo": {}
+            }
+        },
+        "2": {
+            "unlocked": true,
+            "title": "Jesus, sua vida e sua obra",
+            "lessons": {}
+        },
+        "3": {
+            "unlocked": true,
+            "title": "A Volta de Jesus",
+            "lessons": {}
+        },
+        "4": {
+            "unlocked": true,
+            "title": "Jesus é a Porta do Reino",
+            "lessons": {}
+        },
+        "5": {
+            "unlocked": true,
+            "title": "O Espírito Santo",
+            "lessons": {}
+        },
+        "6": {
+            "unlocked": true,
+            "title": "O Deus Pai",
+            "lessons": {}
+        },
+        "7": {
+            "unlocked": true,
+            "title": "O Propósito Eterno de Deus", 
+            "lessons": {}
+        },
+        "8": {
+            "unlocked": true,
+            "title": "Os primeiros passos no caminho", 
+            "lessons": {}
+        },
+        "9":  {
+            "unlocked": true,
+            "title": "Caminhando como sacerdote", 
+            "lessons": {}
+        },
+        "10": {
+            "unlocked": false,
+            "title": "No caminho da salvação", 
+            "lessons": {}
+        },
+        "11": {
+            "unlocked": false,
+            "title": "Caminhando com a Igreja", 
+            "lessons": {}
+        },
+        "12": {
+            "unlocked": false,
+            "title": "Caminhando com família", 
+            "lessons": {}
+        },
+        "13": {
+            "unlocked": false,
+            "title": "O caráter daquele que caminha com Cristo", 
+            "lessons": {}
+        },
+        "14": {
+            "unlocked": false,
+            "title": "Caminhos diferentes?", 
+            "lessons": {}
+        },
+        "15": {
+            "unlocked": false,
+            "title": "Caminhos estranhos", 
+            "lessons": {}
+        },
+        "16": {
+            "unlocked": false,
+            "title": "A caminhada da Igreja", 
+            "lessons": {}
+        },
+        "17": {
+            "unlocked": false,
+            "title": "Nossa caminhada",
+            "lessons": {}
+        }
+    }
+}
