@@ -40,8 +40,7 @@ header img {
 
 main {
     background-color: white;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    border-radius: 20px;
     transition: all 1s;
 }
 
@@ -82,7 +81,7 @@ main {
     font-size: 30px;
     text-decoration: none;
     position: relative;
-    z-index: 1;
+    z-index: 0;
     margin-right: 10px;
     padding: 20px;
 }
@@ -113,6 +112,73 @@ main {
 }
 
 .green-button:last-child::after {
+    content: '';
+}
+
+.green-button-disabled-not-connected {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: #CED4BA;
+    border: 5px solid #CED4BA;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto-number';
+    font-weight: 800;
+    font-size: 30px;
+    text-decoration: none;
+    position: relative;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+.green-button-disabled{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: #CED4BA;
+    border-radius: 50%;
+    border: 5px solid #CED4BA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto-number';
+    font-weight: 800;
+    font-size: 30px;
+    text-decoration: none;
+    position: relative;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+.green-button-disabled::before {
+    content: "";
+    position: absolute;
+    height: calc(100% - 30px);
+    width: 3px;
+    background-color: #CED4BA;
+    top: 50%;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: -1;
+}
+
+.green-button-disabled:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 90px;
+    background-color: #CED4BA;
+    border-radius: 0%;
+    top: calc(100% - 0px);
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: 0;
+}
+
+.green-button-disabled:last-child::after {
     content: '';
 }
 
