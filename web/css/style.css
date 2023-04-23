@@ -46,7 +46,7 @@ main {
 .back-arrow {
     height: 43px;
     width: 43px;
-    transition: all 1s;
+    transition: background-color 1s;
     border-radius: 50%;
 }
 

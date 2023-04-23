@@ -1,5 +1,8 @@
 function start_page(main_box, data_json){
 
+    // Back arrow
+    back_arrow_config(false);
+
     // Clear main box
     main_box.innerHTML = '';
 
@@ -88,4 +91,6 @@ function start_page(main_box, data_json){
 
     div_cycles.appendChild(div_align_itens);
     main_box.appendChild(div_cycles);
+
+    // Back arrow   
 }

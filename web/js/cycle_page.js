@@ -1,4 +1,9 @@
 function cycle_page(main_box, data_json, cycle_number){
+
+    // Back arrow
+
+    back_arrow_config(true, 'start', main_box, data_json);
+
     // Clear main box
     main_box.innerHTML = '';
 
@@ -71,4 +76,5 @@ function cycle_page(main_box, data_json, cycle_number){
         };
     });
     main_box.appendChild(div_to_lessons);
+      
 };
