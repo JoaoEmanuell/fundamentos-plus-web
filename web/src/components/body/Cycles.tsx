@@ -1,6 +1,5 @@
 import data from '@/json/data.json'
 import { GreenButton } from '@/components/ui/GreenButton'
-import { title } from 'process'
 
 export function Cycles() {
     const cycles = data['cycles']
