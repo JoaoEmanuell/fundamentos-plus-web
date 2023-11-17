@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'Roboto-number';
-    src: url('../fonts/Roboto/roboto_medium_numbers.ttf');
-}
-
 :root {
     --button-bg-color: #55730e;
     --button-disabled-bg-color: #CED4BA;
@@ -17,7 +12,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto-number';
     font-weight: 800;
     font-size: 30px;
     text-decoration: none;
@@ -36,7 +30,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto-number';
     font-weight: 800;
     font-size: 30px;
     text-decoration: none;
@@ -85,7 +78,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto-number';
     font-weight: 800;
     font-size: 30px;
     text-decoration: none;
@@ -104,7 +96,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto-number';
     font-weight: 800;
     font-size: 30px;
     text-decoration: none;

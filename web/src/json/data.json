@@ -14,11 +14,7 @@
                         "O Fundamentos possui um site: www.fundamentos.me. Nele estarão disponíveis todas as lições e mídias produzidas e disponibilizadas.",
                         "Dúvidas e solicitações podem ser feitas pelo e-mail contato@fundamentos.me."
                     ],
-                    "video": "https://youtu.be/Z6ksxWXT8-I",
-                    "google-resumed": "https://podcasts.google.com/feed/aHRcHM6Ly9hbmNob3IuZmvcy82MzkODhhYy9wb2RjYXNL3Jzcw/episode/NTVjNzk4OGMtY2E5NyYTIxLTgyZTAtMWEzN2Q1NWZiYjZj?sa=X&ved=CAUQkfYCahcKEwjgucL-zr7-AhUAAAAAHQAAAAAQZg",
-                    "google-complete": "https://podcasts.google.com/feed/aHRcHM6Ly9hbmNob3IuZmvcy82MzkODhhYy9wb2RjYXNL3Jzcw/episode/MmQyY2RlYmQtOTZhYiZjEwLWFhNzMtNjA2NDhkMDg5NmM1?sa=X&ved=CAUQkfYCahcKEwjgucL-zr7-AhUAAAAAHQAAAAAQZg",
-                    "deezer-resumed": "https://deezer.page.link/9FdNxwo5kviCq8sR7",
-                    "deezer-complete": "https://deezer.page.link/VGyiQ6kmhUV4CmM36"
+                    "video": "https://youtu.be/Z6ksxWXT8-I"
                 },
                 "Aprender, crescer e servir": {
                     "id": 2
@@ -75,18 +71,18 @@
             "lessons": {}
         },
         "10": {
-            "unlocked": false,
+            "unlocked": true,
             "title": "No caminho da salvação", 
             "lessons": {}
         },
         "11": {
             "unlocked": false,
-            "title": "Caminhando com a Igreja", 
+            "title": "Caminhando com família", 
             "lessons": {}
         },
         "12": {
             "unlocked": false,
-            "title": "Caminhando com família", 
+            "title": "Os dons do Espírito Santo", 
             "lessons": {}
         },
         "13": {
