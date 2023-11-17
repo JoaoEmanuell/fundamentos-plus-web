@@ -3,32 +3,33 @@
         "1": {
             "unlocked": true,
             "title": "Temas Panorâmicos",
-            "lessons": {
-                "O conselho de Deus": {
-                    "id": 1,
-                    "author": "Edmar Ferreira",
-                    "description": [
-                        "Fundamentos é um programa de ensino formado pelo conselho apostólico da igreja, sob responsabilidade dos pastores Marcos Moraes, Vanjo Souza, Edmar Ferreira, João Bium, Manoel Rocha e Mário Fagundes.",
-                        "O programa conta com várias plataformas e mídias para divulgar o ensino básico da Palavra de Deus de maneira uniforme a toda a igreja.",
-                        "Para cada lição, há vídeos, áudios e textos escritos correspondentes. Todos indexados pelo mesmo número.",
-                        "O Fundamentos possui um site: www.fundamentos.me. Nele estarão disponíveis todas as lições e mídias produzidas e disponibilizadas.",
-                        "Dúvidas e solicitações podem ser feitas pelo e-mail contato@fundamentos.me."
-                    ],
-                    "video": "https://youtu.be/Z6ksxWXT8-I"
+            "lessons": [
+                {
+                    "O conselho de Deus": {
+                        "id": 1
+                    }
                 },
-                "Aprender, crescer e servir": {
-                    "id": 2
+                {
+                    "Aprender, crescer e servir": {
+                        "id": 2
+                    }
                 },
-                "Por que Jesus veio ao mundo?": {
-                    "id": 3
+                {
+                    "Por que Jesus veio ao mundo?": {
+                        "id": 3
+                    }
                 },
-                "O nascimento da igreja": {
-                    "id": 4
+                {
+                    "O nascimento da igreja": {
+                        "id": 4
+                    }
                 },
-                "Porta, caminho e alvo": {
-                    "id": 5
+                {
+                    "Porta, caminho e alvo": {
+                        "id": 5
+                    }
                 }
-            }
+            ]
         },
         "2": {
             "unlocked": true,
@@ -109,6 +110,44 @@
             "unlocked": false,
             "title": "Nossa caminhada",
             "lessons": {}
+        }
+    }, 
+    "lessons": {
+        "1": {
+            "title": "O conselho de Deus",
+            "author": "Edmar Ferreira",
+            "description": [
+                "Fundamentos é um programa de ensino formado pelo conselho apostólico da igreja, sob responsabilidade dos pastores Marcos Moraes, Vanjo Souza, Edmar Ferreira, João Bium, Manoel Rocha e Mário Fagundes.",
+                "O programa conta com várias plataformas e mídias para divulgar o ensino básico da Palavra de Deus de maneira uniforme a toda a igreja.",
+                "Para cada lição, há vídeos, áudios e textos escritos correspondentes. Todos indexados pelo mesmo número.",
+                "O Fundamentos possui um site: www.fundamentos.me. Nele estarão disponíveis todas as lições e mídias produzidas e disponibilizadas.",
+                "Dúvidas e solicitações podem ser feitas pelo e-mail contato@fundamentos.me."
+            ],
+            "video": "https://youtu.be/Z6ksxWXT8-I"
+        },
+        "2": {
+            "title": "Aprender, crescer e servir",
+            "author": "",
+            "description": [],
+            "video": ""
+        },
+        "3": {
+            "title": "Por que Jesus veio ao mundo?",
+            "author": "",
+            "description": [],
+            "video": ""
+        },
+        "4": {
+            "title": "O nascimento da igreja",
+            "author": "",
+            "description": [],
+            "video": ""
+        },
+        "5": {
+            "title": "Porta, caminho e alvo",
+            "author": "",
+            "description": [],
+            "video": ""
         }
     }
 }
