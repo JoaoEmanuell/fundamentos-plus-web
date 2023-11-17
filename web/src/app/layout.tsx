@@ -22,7 +22,7 @@ export default function RootLayout({
                     type="image/x-icon"
                 />
             </head>
-            <body className="bg-white dark:bg-black text-black dark:text-white transition-all duration-1000">
+            <body className="transition-all duration-1000">
                 <noscript>Enable Javascript to use this site!</noscript>
                 <Header />
                 <div className="flex justify-center mt-4">{children}</div>
