@@ -1,10 +1,10 @@
-import { DarkMode } from './DarkMode'
-import { ArrowLeft } from 'lucide-react'
+import { DarkMode } from './Header/DarkMode'
+import { BackArrow } from './Header/BackArrow'
 
 export function Header() {
     return (
         <header className="flex justify-between px-4 mt-4">
-            <ArrowLeft />
+            <BackArrow />
             <DarkMode />
         </header>
     )
