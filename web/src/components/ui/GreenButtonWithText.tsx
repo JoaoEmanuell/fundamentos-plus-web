@@ -4,16 +4,17 @@ interface GreenButtonWithText {
     buttonNumber: string
     buttonEnable?: boolean
     text: string
+    textClassName?: string
 }
 
 export function GreenButtonWithText(props: GreenButtonWithText) {
     return (
-        <div className="mb-4 flex justify-start">
+        <div className="mb-4 flex justify-start items-center">
             <GreenButton
                 text={props.buttonNumber}
                 enable={props.buttonEnable}
             />
-            <h1 className="py-3 text-base">{props.text}</h1>
+            <h1 className={`text-base ${props.textClassName}`}>{props.text}</h1>
         </div>
     )
 }

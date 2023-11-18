@@ -1,5 +1,5 @@
 import data from '@/json/data.json'
-import { GreenButton } from '@/components/ui/GreenButton'
+import { GreenButtonWithText } from '../ui/GreenButtonWithText'
 
 export function Cycles() {
     const cycles = data['cycles']
@@ -15,18 +15,17 @@ export function Cycles() {
                         <div key={key}>
                             {disable ? (
                                 <a href={`/cycle/${key}`}>
-                                    <div className="mb-4 flex justify-start">
-                                        <GreenButton text={key} enable />
-                                        <h1 className="py-3 text-base">
-                                            {title}
-                                        </h1>
-                                    </div>
+                                    <GreenButtonWithText
+                                        buttonNumber={key}
+                                        buttonEnable
+                                        text={title}
+                                    />
                                 </a>
                             ) : (
-                                <div className="mb-4 flex justify-start">
-                                    <GreenButton text={key}></GreenButton>
-                                    <h1 className="py-3 text-base">{title}</h1>
-                                </div>
+                                <GreenButtonWithText
+                                    buttonNumber={key}
+                                    text={title}
+                                />
                             )}
                         </div>
                     )

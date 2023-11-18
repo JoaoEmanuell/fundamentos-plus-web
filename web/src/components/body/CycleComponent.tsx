@@ -1,6 +1,7 @@
 import data from '@/json/data.json'
 import { CenterTitle } from '../ui/CenterTitle'
 import { GreenButton } from '../ui/GreenButton'
+import { GreenButtonWithText } from '../ui/GreenButtonWithText'
 
 interface CycleInterface {
     id: string
@@ -43,15 +44,11 @@ export function CycleComponent(props: CycleInterface) {
                     if (lessonUnlocked) {
                         return (
                             <a key={lessonId} href={`/lesson/${lessonId}`}>
-                                <div className="mb-4 flex justify-start">
-                                    <GreenButton
-                                        text={lessonId.toString()}
-                                        enable
-                                    />
-                                    <h1 className="py-3 text-base">
-                                        {lessonTitle}
-                                    </h1>
-                                </div>
+                                <GreenButtonWithText
+                                    buttonNumber={lessonId.toString()}
+                                    buttonEnable
+                                    text={lessonTitle}
+                                />
                             </a>
                         )
                     } else {
@@ -60,10 +57,10 @@ export function CycleComponent(props: CycleInterface) {
                                 key={lessonId}
                                 className="mb-4 flex justify-start"
                             >
-                                <GreenButton text={lessonId.toString()} />
-                                <h1 className="py-3 text-base">
-                                    {lessonTitle}
-                                </h1>
+                                <GreenButtonWithText
+                                    buttonNumber={lessonId.toString()}
+                                    text={lessonTitle}
+                                />
                             </div>
                         )
                     }
