@@ -131,3 +131,15 @@
 .green-button-disabled:last-child::after {
     content: '';
 }
+
+.green-ball {
+    width: 12px;
+    height: 12px;
+    background-color: var(--button-bg-color);
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    margin-right: 10px;
+}
