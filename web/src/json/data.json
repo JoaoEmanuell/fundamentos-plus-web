@@ -183,7 +183,80 @@
                 "O Fundamentos possui um site: www.fundamentos.me. Nele estarão disponíveis todas as lições e mídias produzidas e disponibilizadas.",
                 "Dúvidas e solicitações podem ser feitas pelo e-mail contato@fundamentos.me."
             ],
-            "video": "https://www.youtube.com/embed/Z6ksxWXT8-I?si=h0etylaOnGyCAj0Z"
+            "video": "https://www.youtube.com/embed/Z6ksxWXT8-I?si=h0etylaOnGyCAj0Z",
+            "pages": [
+                [
+                    {
+                        "type": "green-title",
+                        "content": "O conselho de Deus"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Nesta primeira lição do Fundamentos, vamos apresentar um conteúdo de orientação inicial à igreja quanto à segurança do conselho de Deus para as nossas vidas."
+                    },
+                    {
+                        "type": "text",
+                        "content": "O Salmo 139 mostra o esforço do salmista em tentar compartilhar um pouco da amplitude do pensamento de nosso Senhor."
+                    },
+                    {
+                        "type": "green-separator",
+                        "content": ""
+                    }, 
+                    {
+                        "type": "bible-text",
+                        "content": "17 E quão preciosos me são, ó Deus, os teus pensamentos! Quão grandes são as somas deles! 18 Se as contasse, seriam em maior número do que a areia; quando acordo ainda estou contigo."
+                    },
+                    {
+                        "type": "text-bold",
+                        "content": "Salmos 139: 17 - 18"
+                    }
+                ], [
+                    {
+                        "type": "green-title",
+                        "content": "1) O conselho de Deus"
+                    }, 
+                    {
+                        "type": "text-bold",
+                        "content": "O que você entende por conselho? Quando alguém lhe pede um conselho, o que isso significa?"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Falar sobre 'o conselho de Deus' significa enxergar a amplitude dos pensamentos de Deus. Quantos pensamentos inundam a mente do nosso Criador?"
+                    },
+                    {
+                        "type": "text",
+                        "content": "De acordo com Salmos 139:17-18, seria como tentar contar os grãos de areia da praia. Acha essa analogia possível? Trata-se de uma bela tentativa de nos ajudar a enxergar a grandeza dos pensamentos do nosso Deus."
+                    },
+                    {
+                        "type": "text",
+                        "content": "Todos aqueles que se convertem a Cristo, passam a fazer parte da família de Deus. E nosso desafio, como cristãos na caminhada, está na compreensão desse pensamento."
+                    },
+                    {
+                        "type": "text",
+                        "content": "Ora, o conselho de Deus deve também ser visto pela linha do tempo. Ele antecede a criação do mundo e sucede ao fim desta. Engloba a eternidade passada, bem como a eternidade futura."
+                    },
+                    {
+                        "type": "text",
+                        "content": "Jesus, no fim de seu ministério terreno, antes de subir aos céus, deixou algo muito importante para seus seguidores, uma maneira mais concisa de entender a amplitude dos pensamentos de Deus."
+                    },
+                    {
+                        "type": "green-separator",
+                        "content": ""
+                    },
+                    {
+                        "type": "bible-text",
+                        "content": "E, chegando-se Jesus, falou-lhes, dizendo: É-me dado todo o poder no céu e na terra. Portanto ide, fazei discípulos de todas as nações, batizando-os em nome do Pai, e do Filho, e do Espírito Santo; Ensinando-os a guardar todas as coisas que eu vos tenho mandado; e eis que eu estou convosco todos os dias, até a consumação dos séculos. Amém"
+                    },
+                    {
+                        "type": "text-bold",
+                        "content": "Mt 28:18-20"
+                    },
+                    {
+                        "type": "text",
+                        "content": "O Senhor disse para irmos e fazermos discípulos, espalhando pelo mundo seus ensinamentos, pregando a todas as nações, batizando pessoas arrependidas e ensinando-as a guardar todos os seus ensinamentos. Isso foi uma ordem clara."
+                    }
+                ]
+            ]
         },
         "2": {
             "title": "Aprender, crescer e servir",
