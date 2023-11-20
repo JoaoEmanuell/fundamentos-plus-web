@@ -133,13 +133,11 @@
 }
 
 .green-ball {
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     background-color: var(--button-bg-color);
     color: white;
     border-radius: 50%;
-    text-decoration: none;
     position: relative;
     z-index: 1;
-    margin-right: 10px;
 }
