@@ -10,7 +10,7 @@ export interface lessonInterface {
     description: string[]
     video: string
     'lesson-transcription': string
-    pages: lessonPage[][]
+    pages: lessonPageInterface[][]
 }
 
 export interface cycleInterface {
@@ -23,7 +23,7 @@ export interface cycleInterface {
     }[]
 }
 
-export interface lessonPage {
+export interface lessonPageInterface {
     type:
         | 'green-title'
         | 'text'
