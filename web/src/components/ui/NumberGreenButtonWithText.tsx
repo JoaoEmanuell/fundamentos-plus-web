@@ -1,16 +1,18 @@
-import { GreenButton } from './GreenButton'
+import { NumberGreenButton } from './NumberGreenButton'
 
-interface GreenButtonWithText {
+interface NumberGreenButtonWithTextProps {
     buttonNumber: string
     buttonEnable?: boolean
     text: string
     textClassName?: string
 }
 
-export function GreenButtonWithText(props: GreenButtonWithText) {
+export function NumberGreenButtonWithText(
+    props: NumberGreenButtonWithTextProps
+) {
     return (
         <div className="mb-4 flex justify-start items-center">
-            <GreenButton
+            <NumberGreenButton
                 text={props.buttonNumber}
                 enable={props.buttonEnable}
             />

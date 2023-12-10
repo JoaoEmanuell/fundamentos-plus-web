@@ -2,7 +2,7 @@ import { lessonInterface } from '@/interfaces/interfaces'
 import { authorImages } from '@/lib/authorImages'
 import { getRandomElementKey } from '@/lib/randomElementKey'
 import { CenterDiv } from '../../ui/CenterDiv'
-import { GreenButtonWithText } from '../../ui/GreenButtonWithText'
+import { NumberGreenButtonWithText } from '../../ui/NumberGreenButtonWithText'
 import { YouTubeIframe } from '../../ui/YouTubeIframe'
 import Image from 'next/image'
 
@@ -25,7 +25,7 @@ export function IndexLesson(props: IndexLessonInterface) {
     return (
         <div className="space-y-2">
             <CenterDiv>
-                <GreenButtonWithText
+                <NumberGreenButtonWithText
                     buttonNumber={props.id}
                     text={title}
                     buttonEnable

@@ -4,7 +4,7 @@ import { IndexLesson } from './Lesson/IndexLesson'
 import { useEffect, useState } from 'react'
 import { CenterDiv } from '../ui/CenterDiv'
 import { PageLesson } from './Lesson/PageLesson'
-import { LessonButton } from './Lesson/LessonButton'
+import { GreenButton } from '../ui/GreenButton'
 
 interface LessonInterface {
     id: string
@@ -61,15 +61,15 @@ export function Lesson(props: LessonInterface) {
             {Lesson}
             <CenterDiv>
                 <div className="flex justify-between space-x-4">
-                    <LessonButton
+                    <GreenButton
                         onClick={returnButton}
                         hidden={returnButtonHidden}
                         text={returnButtonText}
-                    ></LessonButton>
-                    <LessonButton
+                    ></GreenButton>
+                    <GreenButton
                         onClick={startLesson}
                         text={lessonButtonText}
-                    ></LessonButton>
+                    ></GreenButton>
                 </div>
             </CenterDiv>
         </div>

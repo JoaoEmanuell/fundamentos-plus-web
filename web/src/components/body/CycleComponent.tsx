@@ -1,7 +1,6 @@
 import data from '@/json/data.json'
 import { CenterTitle } from '../ui/CenterTitle'
-import { GreenButton } from '../ui/GreenButton'
-import { GreenButtonWithText } from '../ui/GreenButtonWithText'
+import { NumberGreenButtonWithText } from '../ui/NumberGreenButtonWithText'
 
 interface CycleInterface {
     id: string
@@ -44,7 +43,7 @@ export function CycleComponent(props: CycleInterface) {
                     if (lessonUnlocked) {
                         return (
                             <a key={lessonId} href={`/lesson/${lessonId}`}>
-                                <GreenButtonWithText
+                                <NumberGreenButtonWithText
                                     buttonNumber={lessonId.toString()}
                                     buttonEnable
                                     text={lessonTitle}
@@ -57,7 +56,7 @@ export function CycleComponent(props: CycleInterface) {
                                 key={lessonId}
                                 className="mb-4 flex justify-start"
                             >
-                                <GreenButtonWithText
+                                <NumberGreenButtonWithText
                                     buttonNumber={lessonId.toString()}
                                     text={lessonTitle}
                                 />

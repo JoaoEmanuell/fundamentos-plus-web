@@ -1,11 +1,11 @@
-import { lessonPage } from '@/interfaces/interfaces'
+import { lessonPageInterface } from '@/interfaces/interfaces'
 import { GreenTitleStyle } from './styles/GreenTitleStyle'
 import { TextBoldStyle } from './styles/TextBold'
 import { TextStyle } from './styles/Text'
 import { BibleTextStyle } from './styles/BibleText'
 import { GreenSeparatorStyle } from './styles/GreenSeparator'
 
-export function PageStyles(props: lessonPage) {
+export function PageStyles(props: lessonPageInterface) {
     const styles = {
         'green-title': GreenTitleStyle,
         text: TextStyle,

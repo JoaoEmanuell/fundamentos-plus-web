@@ -1,16 +1,14 @@
-interface GreenButtonInterface {
+interface GreenButtonProps extends React.ButtonHTMLAttributes<HTMLDivElement> {
     text: string
-    enable?: boolean
 }
 
-export function GreenButton(props: GreenButtonInterface) {
-    if (props.enable && props.enable === true) {
-        return <span className="green-button-not-connected">{props.text}</span>
-    } else {
-        return (
-            <span className="green-button-disabled-not-connected">
-                {props.text}
-            </span>
-        )
-    }
+export function GreenButton(props: GreenButtonProps) {
+    return (
+        <div
+            className="mt-4 border border-gray-200 rounded bg-greenButton text-white px-4"
+            {...props}
+        >
+            {props.text}
+        </div>
+    )
 }

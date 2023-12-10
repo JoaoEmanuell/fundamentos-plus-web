@@ -1,5 +1,5 @@
 import data from '@/json/data.json'
-import { GreenButtonWithText } from '../ui/GreenButtonWithText'
+import { NumberGreenButtonWithText } from '../ui/NumberGreenButtonWithText'
 
 export function Cycles() {
     const cycles = data['cycles']
@@ -15,14 +15,14 @@ export function Cycles() {
                         <div key={key}>
                             {disable ? (
                                 <a href={`/cycle/${key}`}>
-                                    <GreenButtonWithText
+                                    <NumberGreenButtonWithText
                                         buttonNumber={key}
                                         buttonEnable
                                         text={title}
                                     />
                                 </a>
                             ) : (
-                                <GreenButtonWithText
+                                <NumberGreenButtonWithText
                                     buttonNumber={key}
                                     text={title}
                                 />
