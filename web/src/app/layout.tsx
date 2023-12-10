@@ -25,7 +25,9 @@ export default function RootLayout({
             <body className="transition-all duration-500">
                 <noscript>Enable Javascript to use this site!</noscript>
                 <Header />
-                <div className="flex justify-center mt-4 px-4">{children}</div>
+                <div className="flex justify-center mt-4 px-4 mb-4">
+                    {children}
+                </div>
             </body>
         </html>
     )
