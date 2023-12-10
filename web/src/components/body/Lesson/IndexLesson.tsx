@@ -19,9 +19,7 @@ export function IndexLesson(props: IndexLessonInterface) {
 
     const videoUrl = props.lesson['video']
 
-    const lessonTranscription = props['lesson-transcription']
-    const deezerCompleted = props.lesson['deezer-completed']
-    const deezerResumed = props.lesson['deezer-resumed']
+    const lessonTranscription = props.lesson['lesson-transcription']
 
     const description = props.lesson['description']
     return (
@@ -56,8 +54,8 @@ export function IndexLesson(props: IndexLessonInterface) {
                 <h1 className="text-greenButton font-bold text-xl text-center">
                     Conteúdos de apoio
                 </h1>
-                <CenterDiv className="mt-4 border border-gray-300">
-                    <table className="table-fixed">
+                <CenterDiv className="mt-4">
+                    <table className="table-fixed border border-gray-300">
                         <tbody className="divide-y divide-gray-300">
                             <tr>
                                 <td className="flex items-center">
@@ -75,46 +73,6 @@ export function IndexLesson(props: IndexLessonInterface) {
                                         />
                                         <span className="px-1">
                                             Ensino Transcrito
-                                        </span>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td className="flex items-center">
-                                    <a
-                                        href={deezerResumed}
-                                        target="_blank"
-                                        className="flex items-center"
-                                    >
-                                        <Image
-                                            src="/img/deezerpodcasticon.png"
-                                            alt="Docs icon"
-                                            width={88}
-                                            height={88}
-                                            className="bg-greenButton p-2"
-                                        />
-                                        <span className="px-1">
-                                            Deezer Podcast [Resumo da Lição]
-                                        </span>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td className="flex items-center">
-                                    <a
-                                        href={deezerCompleted}
-                                        target="_blank"
-                                        className="flex items-center"
-                                    >
-                                        <Image
-                                            src="/img/deezerpodcasticon.png"
-                                            alt="Docs icon"
-                                            width={88}
-                                            height={88}
-                                            className="bg-greenButton p-2"
-                                        />
-                                        <span className="px-1">
-                                            Deezer Podcast [Live completa]
                                         </span>
                                     </a>
                                 </td>
