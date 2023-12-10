@@ -10,8 +10,6 @@ export interface lessonInterface {
     description: string[]
     video: string
     'lesson-transcription': string
-    'deezer-resumed': string
-    'deezer-completed': string
     pages: lessonPage[][]
 }
 
