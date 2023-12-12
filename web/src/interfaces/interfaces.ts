@@ -30,6 +30,7 @@ export interface lessonPageInterface {
         | 'green-separator'
         | 'bible-text'
         | 'text-bold'
+        | 'green-sub-title'
     content: string
     className?: string
 }

@@ -30,6 +30,7 @@ export default function EditPage() {
         'green-separator',
         'bible-text',
         'text-bold',
+        'green-sub-title',
     ]
 
     const setExportJsonInPreviewDiv = () => {
