@@ -32,6 +32,8 @@ export interface lessonPageInterface {
         | 'text-bold'
         | 'green-sub-title'
         | 'table-with-index'
+        | 'text-italic'
+        | 'list-with-number-green-button-with-text'
     content: string
     className?: string
 }

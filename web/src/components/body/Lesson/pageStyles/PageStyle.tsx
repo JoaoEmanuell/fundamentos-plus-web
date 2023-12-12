@@ -6,6 +6,8 @@ import { BibleTextStyle } from './styles/BibleText'
 import { GreenSeparatorStyle } from './styles/GreenSeparator'
 import { GreenSubTitleStyle } from './styles/GreenSubTitleStyle'
 import { TableWithIndexStyle } from './styles/TableWithIndexStyle'
+import { TextItalicStyle } from './styles/TextItalic'
+import { ListWithNumberGreenButtonWithTextStyle } from './styles/ListWithNumberGreenButtonWithTextStyle'
 
 export function PageStyles(props: lessonPageInterface) {
     const styles = {
@@ -16,6 +18,9 @@ export function PageStyles(props: lessonPageInterface) {
         'green-separator': GreenSeparatorStyle,
         'green-sub-title': GreenSubTitleStyle,
         'table-with-index': TableWithIndexStyle,
+        'text-italic': TextItalicStyle,
+        'list-with-number-green-button-with-text':
+            ListWithNumberGreenButtonWithTextStyle,
     }
 
     // If not exists the type in styles

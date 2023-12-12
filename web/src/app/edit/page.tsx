@@ -32,6 +32,8 @@ export default function EditPage() {
         'text-bold',
         'green-sub-title',
         'table-with-index',
+        'text-italic',
+        'list-with-number-green-button-with-text',
     ]
 
     const setExportJsonInPreviewDiv = () => {
