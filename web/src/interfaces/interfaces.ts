@@ -31,6 +31,7 @@ export interface lessonPageInterface {
         | 'bible-text'
         | 'text-bold'
         | 'green-sub-title'
+        | 'table-with-index'
     content: string
     className?: string
 }

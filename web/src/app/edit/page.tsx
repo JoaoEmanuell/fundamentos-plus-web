@@ -31,6 +31,7 @@ export default function EditPage() {
         'bible-text',
         'text-bold',
         'green-sub-title',
+        'table-with-index',
     ]
 
     const setExportJsonInPreviewDiv = () => {
