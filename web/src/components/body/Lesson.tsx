@@ -29,6 +29,7 @@ export function Lesson(props: LessonInterface) {
         setLesson(page)
         setActualPage(actualPage + 1)
         setReturnButtonHidden(false)
+        window.scrollTo(0, 0) // User go to page top
     }
 
     const startLesson = () => {
@@ -48,11 +49,13 @@ export function Lesson(props: LessonInterface) {
             setReturnButtonHidden(true)
             setLessonButtonText(`Iniciar lição`)
             setActualPage(0)
+            window.scrollTo(0, 0)
         } else {
             const page = <PageLesson lesson={lesson} page={actualPage - 2} />
             setLesson(page)
             setActualPage(actualPage - 1)
             setLessonButtonText(`Próximo ${actualPage - 1}/${numberOfPages}`)
+            window.scrollTo(0, 0)
         }
     }
 
