@@ -14,3 +14,15 @@
 .light {
   background-color: var(--clr-bg-light);
 }
+
+/* Load the fonts */
+
+@font-face {
+  font-family: "roboto";
+  src: url("../../public/fonts/Roboto/roboto_medium_numbers.ttf");
+}
+
+@font-face {
+  font-family: 'montserrat-regular';
+  src: url("../../public/fonts/Montserrat/montserrat_montserratregular.ttf");
+}

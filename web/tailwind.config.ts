@@ -18,6 +18,10 @@ const config: Config = {
                 greenButton: '#55730e',
                 greenText: '#769335',
             },
+            fontFamily: {
+                roboto: ['roboto', 'sans-serif'],
+                'montserrat-regular': ['montserrat-regular', 'sans-serif']
+            },
         },
     },
     plugins: [],
