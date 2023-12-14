@@ -1,5 +1,5 @@
 import { getRandomElementKey } from '@/lib/randomElementKey'
-import { StyleInterface } from './StyleInterface'
+import { StyleInterface } from '../StyleInterface'
 
 export function TableWithIndexStyle(props: StyleInterface) {
     /*

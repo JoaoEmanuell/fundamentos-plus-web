@@ -1,4 +1,4 @@
-import { StyleInterface } from './StyleInterface'
+import { StyleInterface } from '../StyleInterface'
 
 export function TextBoldStyle(props: StyleInterface) {
     return (

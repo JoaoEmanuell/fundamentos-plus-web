@@ -1,13 +1,13 @@
 import { lessonPageInterface } from '@/interfaces/interfaces'
-import { GreenTitleStyle } from './styles/GreenTitleStyle'
-import { TextBoldStyle } from './styles/TextBold'
-import { TextStyle } from './styles/Text'
-import { BibleTextStyle } from './styles/BibleText'
-import { GreenSeparatorStyle } from './styles/GreenSeparator'
-import { GreenSubTitleStyle } from './styles/GreenSubTitleStyle'
-import { TableWithIndexStyle } from './styles/TableWithIndexStyle'
-import { TextItalicStyle } from './styles/TextItalic'
-import { ListWithNumberGreenButtonWithTextStyle } from './styles/ListWithNumberGreenButtonWithTextStyle'
+import { GreenTitleStyle } from './styles/green/GreenTitleStyle'
+import { TextBoldStyle } from './styles/text/TextBold'
+import { TextStyle } from './styles/text/Text'
+import { BibleTextStyle } from './styles/text/BibleText'
+import { GreenSeparatorStyle } from './styles/green/GreenSeparator'
+import { GreenSubTitleStyle } from './styles/green/GreenSubTitleStyle'
+import { TableWithIndexStyle } from './styles/table/TableWithIndexStyle'
+import { TextItalicStyle } from './styles/text/TextItalic'
+import { ListWithNumberGreenButtonWithTextStyle } from './styles/list/ListWithNumberGreenButtonWithTextStyle'
 
 export function PageStyles(props: lessonPageInterface) {
     const styles = {

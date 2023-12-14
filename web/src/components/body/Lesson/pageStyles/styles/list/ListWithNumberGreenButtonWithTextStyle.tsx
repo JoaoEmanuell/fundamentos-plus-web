@@ -1,5 +1,5 @@
 import { NumberGreenButton } from '@/components/ui/NumberGreenButton'
-import { StyleInterface } from './StyleInterface'
+import { StyleInterface } from '../StyleInterface'
 import { getRandomElementKey } from '@/lib/randomElementKey'
 
 export function ListWithNumberGreenButtonWithTextStyle(props: StyleInterface) {
