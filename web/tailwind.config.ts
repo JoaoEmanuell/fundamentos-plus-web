@@ -16,6 +16,7 @@ const config: Config = {
             },
             colors: {
                 greenButton: '#55730e',
+                greenText: '#769335',
             },
         },
     },

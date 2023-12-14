@@ -34,6 +34,8 @@ export interface lessonPageInterface {
         | 'table-with-index'
         | 'text-italic'
         | 'list-with-number-green-button-with-text'
+        | 'text-for-complement-reading'
+        | 'text-green'
     content: string
     className?: string
 }

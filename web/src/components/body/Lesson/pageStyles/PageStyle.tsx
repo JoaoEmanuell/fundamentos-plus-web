@@ -8,6 +8,8 @@ import { GreenSubTitleStyle } from './styles/green/GreenSubTitleStyle'
 import { TableWithIndexStyle } from './styles/table/TableWithIndexStyle'
 import { TextItalicStyle } from './styles/text/TextItalic'
 import { ListWithNumberGreenButtonWithTextStyle } from './styles/list/ListWithNumberGreenButtonWithTextStyle'
+import { TextForComplementReadingStyle } from './styles/text/TextForComplementReading'
+import { TextGreenStyle } from './styles/text/TextGreen'
 
 export function PageStyles(props: lessonPageInterface) {
     const styles = {
@@ -21,6 +23,8 @@ export function PageStyles(props: lessonPageInterface) {
         'text-italic': TextItalicStyle,
         'list-with-number-green-button-with-text':
             ListWithNumberGreenButtonWithTextStyle,
+        'text-for-complement-reading': TextForComplementReadingStyle,
+        'text-green': TextGreenStyle,
     }
 
     // If not exists the type in styles
