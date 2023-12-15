@@ -50,7 +50,7 @@ export function BurgerMenu() {
                         <ul>
                             <li className="mb-1">
                                 <a
-                                    className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                                    className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-greenButton rounded"
                                     href="/"
                                 >
                                     Página inicial
@@ -58,15 +58,15 @@ export function BurgerMenu() {
                             </li>
                             <li className="mb-1">
                                 <a
-                                    className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                    href="/"
+                                    className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-greenButton rounded"
+                                    href="/cycles"
                                 >
                                     Ciclos
                                 </a>
                             </li>
                             <li className="mb-1">
                                 <a
-                                    className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                                    className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-greenButton rounded"
                                     href="/about"
                                 >
                                     Sobre

@@ -40,5 +40,9 @@ export function DarkMode() {
         }
     }
 
-    return <div onClick={changeItem}>{item}</div>
+    return (
+        <div onClick={changeItem} className="cursor-pointer">
+            {item}
+        </div>
+    )
 }
