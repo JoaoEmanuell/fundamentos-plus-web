@@ -1,11 +1,5 @@
-import { Cycles } from '@/components/body/Cycles'
-import { CenterTitle } from '@/components/ui/CenterTitle'
+import { HomeComponent } from '@/components/body/Home'
 
 export default function Home() {
-    return (
-        <main>
-            <CenterTitle text="Ciclos: "></CenterTitle>
-            <Cycles />
-        </main>
-    )
+    return <HomeComponent />
 }
