@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { CenterDiv } from '../ui/CenterDiv'
 import { PageLesson } from './Lesson/PageLesson'
 import { GreenButton } from '../ui/GreenButton'
+import { SetCookie } from '@/functions/cookies/SetCookie'
 
 interface LessonInterface {
     id: string
@@ -47,6 +48,8 @@ export function Lesson(props: LessonInterface) {
     const startLesson = () => {
         if (lessonButtonText === 'Finalizar') {
             // End lesson
+            // Set cookies
+            SetCookie('lastLesson', props.id)
             window.location.href = `/end/${props.id}`
         } else if (actualPage + 1 === numberOfPages) {
             nextLessonPage()
