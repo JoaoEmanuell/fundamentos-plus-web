@@ -36,6 +36,7 @@ export default function EditPage() {
         'list-with-number-green-button-with-text',
         'text-for-complement-reading',
         'text-green',
+        'text-important-note',
     ]
 
     const setExportJsonInPreviewDiv = () => {

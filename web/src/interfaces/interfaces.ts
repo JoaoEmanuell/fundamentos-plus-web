@@ -36,6 +36,7 @@ export interface lessonPageInterface {
         | 'list-with-number-green-button-with-text'
         | 'text-for-complement-reading'
         | 'text-green'
+        | 'text-important-note'
     content: string
     className?: string
 }

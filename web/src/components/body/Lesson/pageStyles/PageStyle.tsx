@@ -10,6 +10,7 @@ import { TextItalicStyle } from './styles/text/TextItalic'
 import { ListWithNumberGreenButtonWithTextStyle } from './styles/list/ListWithNumberGreenButtonWithTextStyle'
 import { TextForComplementReadingStyle } from './styles/text/TextForComplementReading'
 import { TextGreenStyle } from './styles/text/TextGreen'
+import { TextImportantNote } from './styles/text/TextImportantNote'
 
 export function PageStyles(props: lessonPageInterface) {
     const styles = {
@@ -25,6 +26,7 @@ export function PageStyles(props: lessonPageInterface) {
             ListWithNumberGreenButtonWithTextStyle,
         'text-for-complement-reading': TextForComplementReadingStyle,
         'text-green': TextGreenStyle,
+        'text-important-note': TextImportantNote,
     }
 
     // If not exists the type in styles
