@@ -1,4 +1,3 @@
-import data from '@/json/data.json'
 import { lessonInterface } from '@/interfaces/interfaces'
 import { IndexLesson } from './Lesson/IndexLesson'
 import { useEffect, useState } from 'react'
@@ -16,16 +15,29 @@ export function Lesson(props: LessonInterface) {
     const [lessonButtonText, setLessonButtonText] = useState('Iniciar lição')
     const [returnButtonText, setReturnButtonText] = useState('Anterior')
     const [returnButtonHidden, setReturnButtonHidden] = useState(true)
-
-    const lesson: lessonInterface = data['lessons'][props.id]
-    const numberOfPages = lesson['pages'].length
+    const [numberOfPages, setNumberOfPages] = useState<number>(0)
+    const [lessonJson, setLessonJson] = useState<lessonInterface | any>()
 
     useEffect(() => {
-        setLesson(<IndexLesson id={props.id} lesson={lesson} />)
+        const pathToJson = `${process.env.PATH_TO_DATA}/data/lessons/${props.id}.min.json`
+        fetch(pathToJson, {
+            method: 'GET',
+            mode: 'cors',
+            cache: 'default',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                setLessonJson(data) // set the lesson json
+                setNumberOfPages(data['pages'].length) // set the number of pages
+                setLesson(<IndexLesson id={props.id} lesson={data} />) // set the lesson description
+            })
     }, []) // Load the description in the first execution
 
     const nextLessonPage = () => {
-        const page = <PageLesson lesson={lesson} page={actualPage} />
+        const page = <PageLesson lesson={lessonJson} page={actualPage} />
         setLesson(page)
         setActualPage(actualPage + 1)
         setReturnButtonHidden(false)
@@ -48,13 +60,15 @@ export function Lesson(props: LessonInterface) {
     const returnButton = () => {
         if (actualPage == 1) {
             // Return to index
-            setLesson(<IndexLesson id={props.id} lesson={lesson} />)
+            setLesson(<IndexLesson id={props.id} lesson={lessonJson} />)
             setReturnButtonHidden(true)
             setLessonButtonText(`Iniciar lição`)
             setActualPage(0)
             window.scrollTo(0, 0)
         } else {
-            const page = <PageLesson lesson={lesson} page={actualPage - 2} />
+            const page = (
+                <PageLesson lesson={lessonJson} page={actualPage - 2} />
+            )
             setLesson(page)
             setActualPage(actualPage - 1)
             setLessonButtonText(`Próximo ${actualPage - 1}/${numberOfPages}`)
