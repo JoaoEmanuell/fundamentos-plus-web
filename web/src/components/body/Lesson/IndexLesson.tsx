@@ -19,7 +19,7 @@ export function IndexLesson(props: IndexLessonInterface) {
 
     const videoUrl = props.lesson['video']
 
-    const lessonTranscription = props.lesson['lesson-transcription']
+    const lessonTranscription = `${process.env.PATH_TO_DATA}/assets/lessons_pdfs/${props.lesson['lesson-transcription']}`
 
     const description = props.lesson['description']
     return (
@@ -60,7 +60,7 @@ export function IndexLesson(props: IndexLessonInterface) {
                             <tr>
                                 <td className="flex items-center">
                                     <a
-                                        href={`/assets/lessons_pdfs/${lessonTranscription}`}
+                                        href={`${lessonTranscription}`}
                                         target="_blank"
                                         className="flex items-center"
                                     >
