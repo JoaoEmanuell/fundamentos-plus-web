@@ -33,7 +33,10 @@ export function Lesson(props: LessonInterface) {
     }
 
     const startLesson = () => {
-        if (actualPage + 1 === numberOfPages) {
+        if (lessonButtonText === 'Finalizar') {
+            // End lesson
+            window.location.href = `/end/${props.id}`
+        } else if (actualPage + 1 === numberOfPages) {
             nextLessonPage()
             setLessonButtonText(`Finalizar`)
         } else {
