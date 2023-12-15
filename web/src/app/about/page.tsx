@@ -12,8 +12,8 @@ export default function AboutPage() {
                 </p>
                 <p className="text-center">
                     Esse projeto não possui qualquer lucratividade! <br />
-                    Caso queria contribuir com o projeto fundamentos oficial,
-                    acesse o fundamentos{' '}
+                    Caso queria contribuir com o projeto fundamentos, acesse o
+                    fundamentos{' '}
                     <a
                         href="https://www.fundamentos.me/"
                         target="_blank"
