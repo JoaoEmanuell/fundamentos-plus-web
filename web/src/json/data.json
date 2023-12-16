@@ -17,105 +17,105 @@
                 {
                     "id": 3,
                     "title": "Por que Jesus veio ao mundo?",
-                    "unlocked": true
+                    "unlocked": false
                 },
                 {
                     "id": 4,
                     "title": "O nascimento da igreja",
-                    "unlocked": true
+                    "unlocked": false
                 },
                 {
                     "id": 5,
                     "title": "Porta, caminho e alvo",
-                    "unlocked": true
+                    "unlocked": false
                 }
             ]
         },
         "2": {
-            "unlocked": true,
+            "unlocked": false,
             "title": "Jesus, sua vida e sua obra",
             "lessons": [
                 {
                     "id": 6,
                     "title": "Jesus é Deus",
-                    "unlocked": true
+                    "unlocked": false
                 }
             ]
         },
         "3": {
-            "unlocked": true,
+            "unlocked": false,
             "title": "A Volta de Jesus",
             "lessons": [
                 {
                     "id": 23,
                     "title": "Por que e como estudar sobre a volta de Jesus?",
-                    "unlocked": true
+                    "unlocked": false
                 }
             ]
         },
         "4": {
-            "unlocked": true,
+            "unlocked": false,
             "title": "Jesus é a Porta do Reino",
             "lessons": [
                 {
                     "id": 36,
                     "title": "Convicção de pecados",
-                    "unlocked": true
+                    "unlocked": false
                 }
             ]
         },
         "5": {
-            "unlocked": true,
+            "unlocked": false,
             "title": "O Espírito Santo",
             "lessons": [
                 {
                     "id": 45,
                     "title": "O Espírito Santo é Deus",
-                    "unlocked": true
+                    "unlocked": false
                 }
             ]
         },
         "6": {
-            "unlocked": true,
+            "unlocked": false,
             "title": "O Deus Pai",
             "lessons": [
                 {
                     "id": 54,
                     "title": "O Deus triúno",
-                    "unlocked": true
+                    "unlocked": false
                 }
             ]
         },
         "7": {
-            "unlocked": true,
+            "unlocked": false,
             "title": "O Propósito Eterno de Deus", 
             "lessons": [
                 {
                     "id": 58,
                     "title": "Uma família para o Pai",
-                    "unlocked": true
+                    "unlocked": false
                 }
             ]
         },
         "8": {
-            "unlocked": true,
+            "unlocked": false,
             "title": "Os primeiros passos no caminho", 
             "lessons": [
                 {
                     "id": 61,
                     "title": "Perdoar - Parte 1",
-                    "unlocked": true
+                    "unlocked": false
                 }
             ]
         },
         "9":  {
-            "unlocked": true,
+            "unlocked": false,
             "title": "Caminhando como sacerdote", 
             "lessons": [
                 {
                     "id": 71,
                     "title": "O sacerdócio de todos os santos",
-                    "unlocked": true
+                    "unlocked": false
                 }
             ]
         },
