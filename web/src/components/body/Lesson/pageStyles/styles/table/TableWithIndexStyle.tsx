@@ -18,7 +18,7 @@ export function TableWithIndexStyle(props: StyleInterface) {
         full_content.push(line.split(' | '))
     })
     return (
-        <table className="table-fixed border-gray-300 border-2">
+        <table className="table-auto border-gray-300 border-2">
             <tbody className="divide-y divide-gray-300">
                 {full_content.map((lines) => {
                     return (
@@ -27,7 +27,7 @@ export function TableWithIndexStyle(props: StyleInterface) {
                                 {
                                     if (!line.search('index')) {
                                         return (
-                                            <td className="bg-greenButton text-white w-16 text-lg text-center">
+                                            <td className="bg-greenButton text-white w-32 text-lg text-center">
                                                 <Markdown>
                                                     {line.replace('index:', '')}
                                                 </Markdown>

@@ -12,6 +12,7 @@ import { TextForComplementReadingStyle } from './styles/text/TextForComplementRe
 import { TextGreenStyle } from './styles/text/TextGreen'
 import { TextImportantNote } from './styles/text/TextImportantNote'
 import { TableWithGreenHeaderStyle } from './styles/table/TableWithGreenHeaderStyle'
+import { ListWithGrayBackgroundStyle } from './styles/list/ListWithGrayBackgroundStyle'
 
 export function PageStyles(props: lessonPageInterface) {
     const styles = {
@@ -29,6 +30,7 @@ export function PageStyles(props: lessonPageInterface) {
         'text-green': TextGreenStyle,
         'text-important-note': TextImportantNote,
         'table-with-green-header': TableWithGreenHeaderStyle,
+        'list-with-gray-background': ListWithGrayBackgroundStyle,
     }
 
     // If not exists the type in styles

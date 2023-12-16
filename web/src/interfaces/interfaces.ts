@@ -38,6 +38,7 @@ export interface lessonPageInterface {
         | 'text-green'
         | 'text-important-note'
         | 'table-with-green-header'
+        | 'list-with-gray-background'
     content: string
     className?: string
 }
