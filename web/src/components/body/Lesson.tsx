@@ -14,6 +14,7 @@ export function Lesson(props: LessonInterface) {
     const [actualPage, setActualPage] = useState<number>(0)
     const [Lesson, setLesson] = useState<JSX.Element | null>(null)
     const [lessonButtonText, setLessonButtonText] = useState('Iniciar lição')
+    const [lessonButtonHidden, setLessonButtonHidden] = useState(true)
     const [returnButtonText, setReturnButtonText] = useState('Anterior')
     const [returnButtonHidden, setReturnButtonHidden] = useState(true)
     const [numberOfPages, setNumberOfPages] = useState<number>(0)
@@ -34,6 +35,7 @@ export function Lesson(props: LessonInterface) {
                 setLessonJson(data) // set the lesson json
                 setNumberOfPages(data['pages'].length) // set the number of pages
                 setLesson(<IndexLesson id={props.id} lesson={data} />) // set the lesson description
+                setLessonButtonHidden(false) // show the start button
             })
     }, []) // Load the description in the first execution
 
@@ -92,6 +94,7 @@ export function Lesson(props: LessonInterface) {
                     <GreenButton
                         onClick={startLesson}
                         text={lessonButtonText}
+                        hidden={lessonButtonHidden}
                     ></GreenButton>
                 </div>
             </CenterDiv>
