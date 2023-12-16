@@ -1,5 +1,6 @@
 import { getRandomElementKey } from '@/lib/randomElementKey'
 import { StyleInterface } from '../StyleInterface'
+import Markdown from 'react-markdown'
 
 export function TableWithIndexStyle(props: StyleInterface) {
     /*
@@ -27,13 +28,15 @@ export function TableWithIndexStyle(props: StyleInterface) {
                                     if (!line.search('index')) {
                                         return (
                                             <td className="bg-greenButton text-white w-16 text-lg text-center">
-                                                {line.replace('index:', '')}
+                                                <Markdown>
+                                                    {line.replace('index:', '')}
+                                                </Markdown>
                                             </td>
                                         )
                                     } else {
                                         return (
                                             <td className="text-black bg-gray-200 text-center border border-gray-300 px-4">
-                                                {line}
+                                                <Markdown>{line}</Markdown>
                                             </td>
                                         )
                                     }

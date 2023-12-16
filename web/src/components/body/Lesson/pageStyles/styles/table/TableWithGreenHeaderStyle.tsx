@@ -1,6 +1,8 @@
 import { getRandomElementKey } from '@/lib/randomElementKey'
 import { StyleInterface } from '../StyleInterface'
 
+import Markdown from 'react-markdown'
+
 export function TableWithGreenHeaderStyle(props: StyleInterface) {
     /*
     Table structure:
@@ -41,7 +43,7 @@ export function TableWithGreenHeaderStyle(props: StyleInterface) {
                                 key={getRandomElementKey()}
                                 className="bg-greenButton text-white text-base text-center border-2 border-gray-200 p-3 "
                             >
-                                {header}
+                                <Markdown>{header}</Markdown>
                             </th>
                         )
                     })}
@@ -52,7 +54,7 @@ export function TableWithGreenHeaderStyle(props: StyleInterface) {
                     return (
                         <tr key={getRandomElementKey()}>
                             <td className="text-black bg-gray-200 text-center border border-gray-300 p-2 text-sm">
-                                {first_line}
+                                <Markdown>{first_line}</Markdown>
                             </td>
                             {others_columns.map((column) => {
                                 return (
@@ -60,7 +62,7 @@ export function TableWithGreenHeaderStyle(props: StyleInterface) {
                                         key={getRandomElementKey()}
                                         className="text-black bg-gray-200 text-center border border-gray-300 p-2 text-sm"
                                     >
-                                        {column[index]}
+                                        <Markdown>{column[index]}</Markdown>
                                     </td>
                                 )
                             })}

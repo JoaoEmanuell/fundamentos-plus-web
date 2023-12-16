@@ -2,6 +2,8 @@ import { NumberGreenButton } from '@/components/ui/NumberGreenButton'
 import { StyleInterface } from '../StyleInterface'
 import { getRandomElementKey } from '@/lib/randomElementKey'
 
+import Markdown from 'react-markdown'
+
 export function ListWithNumberGreenButtonWithTextStyle(props: StyleInterface) {
     /* 
     Structure:
@@ -28,7 +30,9 @@ export function ListWithNumberGreenButtonWithTextStyle(props: StyleInterface) {
                         key={getRandomElementKey()}
                     >
                         <NumberGreenButton text={number} enable={true} />
-                        <p className={`text-base`}>{text}</p>
+                        <p className={`text-base`}>
+                            <Markdown>{text}</Markdown>
+                        </p>
                     </div>
                 )
             })}
