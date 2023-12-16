@@ -30,7 +30,6 @@ export function TableWithGreenHeaderStyle(props: StyleInterface) {
     })
     const first_column = full_lines[0]
     const others_columns = full_lines.slice(1, full_lines.length)
-    console.log(others_columns)
 
     return (
         <table className="table-fixed border-gray-300 border-2">
