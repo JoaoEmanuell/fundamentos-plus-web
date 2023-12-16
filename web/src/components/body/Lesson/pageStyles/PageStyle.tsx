@@ -11,6 +11,7 @@ import { ListWithNumberGreenButtonWithTextStyle } from './styles/list/ListWithNu
 import { TextForComplementReadingStyle } from './styles/text/TextForComplementReading'
 import { TextGreenStyle } from './styles/text/TextGreen'
 import { TextImportantNote } from './styles/text/TextImportantNote'
+import { TableWithGreenHeaderStyle } from './styles/table/TableWithGreenHeaderStyle'
 
 export function PageStyles(props: lessonPageInterface) {
     const styles = {
@@ -27,6 +28,7 @@ export function PageStyles(props: lessonPageInterface) {
         'text-for-complement-reading': TextForComplementReadingStyle,
         'text-green': TextGreenStyle,
         'text-important-note': TextImportantNote,
+        'table-with-green-header': TableWithGreenHeaderStyle,
     }
 
     // If not exists the type in styles

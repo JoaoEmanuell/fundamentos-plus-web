@@ -5,7 +5,7 @@ export function TableWithIndexStyle(props: StyleInterface) {
     /*
     Table structure:
 
-        "index:number | string | string | ..., index:number | string | ..."
+        "index:string | string | string | ..., index:number | string | ..."
         , === lines,
         | === columns.
     */

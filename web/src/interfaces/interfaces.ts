@@ -37,6 +37,7 @@ export interface lessonPageInterface {
         | 'text-for-complement-reading'
         | 'text-green'
         | 'text-important-note'
+        | 'table-with-green-header'
     content: string
     className?: string
 }

@@ -37,6 +37,7 @@ export default function EditPage() {
         'text-for-complement-reading',
         'text-green',
         'text-important-note',
+        'table-with-green-header',
     ]
 
     const setExportJsonInPreviewDiv = () => {
