@@ -1,0 +1,1 @@
+Nomenclature: lesson_id-image_number.png
