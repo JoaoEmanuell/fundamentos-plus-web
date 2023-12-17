@@ -39,6 +39,9 @@ export default function EditPage() {
         'text-important-note',
         'table-with-green-header',
         'list-with-gray-background',
+        'check-list',
+        'image',
+        'text-highlight',
     ]
 
     const setExportJsonInPreviewDiv = () => {

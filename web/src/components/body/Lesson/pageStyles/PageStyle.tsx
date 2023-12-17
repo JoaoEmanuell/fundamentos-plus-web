@@ -13,6 +13,9 @@ import { TextGreenStyle } from './styles/text/TextGreen'
 import { TextImportantNote } from './styles/text/TextImportantNote'
 import { TableWithGreenHeaderStyle } from './styles/table/TableWithGreenHeaderStyle'
 import { ListWithGrayBackgroundStyle } from './styles/list/ListWithGrayBackgroundStyle'
+import { CheckListStyle } from './styles/list/CheckListStyle'
+import { ImageStyle } from './styles/others/ImageStyle'
+import { TextHighlight } from './styles/text/TextHighlight'
 
 export function PageStyles(props: lessonPageInterface) {
     const styles = {
@@ -31,6 +34,9 @@ export function PageStyles(props: lessonPageInterface) {
         'text-important-note': TextImportantNote,
         'table-with-green-header': TableWithGreenHeaderStyle,
         'list-with-gray-background': ListWithGrayBackgroundStyle,
+        'check-list': CheckListStyle,
+        image: ImageStyle,
+        'text-highlight': TextHighlight,
     }
 
     // If not exists the type in styles

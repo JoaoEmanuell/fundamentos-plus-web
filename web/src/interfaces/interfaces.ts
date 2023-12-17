@@ -39,6 +39,9 @@ export interface lessonPageInterface {
         | 'text-important-note'
         | 'table-with-green-header'
         | 'list-with-gray-background'
+        | 'check-list'
+        | 'image'
+        | 'text-highlight'
     content: string
     className?: string
 }
