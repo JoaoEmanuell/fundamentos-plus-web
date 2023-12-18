@@ -42,6 +42,7 @@ export default function EditPage() {
         'check-list',
         'image',
         'text-highlight',
+        'green-background-title',
     ]
 
     const setExportJsonInPreviewDiv = () => {

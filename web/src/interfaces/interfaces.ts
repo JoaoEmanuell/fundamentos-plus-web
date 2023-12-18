@@ -42,6 +42,7 @@ export interface lessonPageInterface {
         | 'check-list'
         | 'image'
         | 'text-highlight'
+        | 'green-background-title'
     content: string
     className?: string
 }

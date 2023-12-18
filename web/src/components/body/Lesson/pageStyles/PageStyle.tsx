@@ -16,6 +16,7 @@ import { ListWithGrayBackgroundStyle } from './styles/list/ListWithGrayBackgroun
 import { CheckListStyle } from './styles/list/CheckListStyle'
 import { ImageStyle } from './styles/others/ImageStyle'
 import { TextHighlight } from './styles/text/TextHighlight'
+import { GreenBackgroundTitleStyle } from './styles/green/GreenBackgroundTitleStyle'
 
 export function PageStyles(props: lessonPageInterface) {
     const styles = {
@@ -37,6 +38,7 @@ export function PageStyles(props: lessonPageInterface) {
         'check-list': CheckListStyle,
         image: ImageStyle,
         'text-highlight': TextHighlight,
+        'green-background-title': GreenBackgroundTitleStyle,
     }
 
     // If not exists the type in styles
