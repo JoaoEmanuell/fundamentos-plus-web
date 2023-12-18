@@ -4,6 +4,9 @@ import { StyleInterface } from '../StyleInterface'
 import Markdown from 'react-markdown'
 
 export function TextHighlight(props: StyleInterface) {
+    /* 
+    expression to highlight | color to expression | text
+    */
     const content = props.content.split(' | ')
     const highlightExpression = content[0]
     const color = content[1]
@@ -11,11 +14,18 @@ export function TextHighlight(props: StyleInterface) {
     const texts = text.split(highlightExpression) // get the text split
     return (
         <div>
-            <p>
+            <p className="break-words">
                 {texts.map((text, index) => {
                     if (index === texts.length - 1) {
                         // last element
-                        return <span key={getRandomElementKey()}>{text}</span>
+                        return (
+                            <span
+                                key={getRandomElementKey()}
+                                className="break-words"
+                            >
+                                {text}
+                            </span>
+                        )
                     } else {
                         return (
                             <>
@@ -32,17 +42,18 @@ export function TextHighlight(props: StyleInterface) {
                                     style={{
                                         color: color,
                                     }}
-                                    className="mx-1"
+                                    className="break-words"
                                 >
+                                    {' '}
                                     {
                                         <Markdown
                                             components={{
                                                 p: 'span',
                                             }}
                                         >
-                                            {highlightExpression}
+                                            {`${highlightExpression}`}
                                         </Markdown>
-                                    }
+                                    }{' '}
                                 </span>
                             </>
                         )
