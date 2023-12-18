@@ -5,6 +5,7 @@ const config: Config = {
         './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
         './src/components/**/*.{js,ts,jsx,tsx,mdx}',
         './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+        './public/js/tailwindClass.js', // compile the custom classes
     ],
     darkMode: 'class',
     theme: {
@@ -20,7 +21,7 @@ const config: Config = {
             },
             fontFamily: {
                 roboto: ['roboto', 'sans-serif'],
-                'montserrat-regular': ['montserrat-regular', 'sans-serif']
+                'montserrat-regular': ['montserrat-regular', 'sans-serif'],
             },
         },
     },
