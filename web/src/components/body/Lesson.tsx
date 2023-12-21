@@ -1,3 +1,5 @@
+'use client'
+
 import { lessonInterface } from '@/interfaces/interfaces'
 import { IndexLesson } from './Lesson/IndexLesson'
 import { useEffect, useState } from 'react'
@@ -19,6 +21,7 @@ export function Lesson(props: LessonInterface) {
     const [returnButtonHidden, setReturnButtonHidden] = useState(true)
     const [numberOfPages, setNumberOfPages] = useState<number>(0)
     const [lessonJson, setLessonJson] = useState<lessonInterface | any>()
+    const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
         const pathToJson = `${process.env.PATH_TO_DATA}/data/lessons/${props.id}.min.json`
@@ -36,6 +39,7 @@ export function Lesson(props: LessonInterface) {
                 setNumberOfPages(data['pages'].length) // set the number of pages
                 setLesson(<IndexLesson id={props.id} lesson={data} />) // set the lesson description
                 setLessonButtonHidden(false) // show the start button
+                setIsLoading(false)
             })
     }, []) // Load the description in the first execution
 
@@ -80,6 +84,10 @@ export function Lesson(props: LessonInterface) {
             window.scrollTo(0, 0)
         }
     }
+
+    // while the json not load
+
+    if (isLoading) return <p>Carregando...</p>
 
     return (
         <div>
