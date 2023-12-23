@@ -7,26 +7,31 @@
                 {
                     "id": 1,
                     "title": "O conselho de Deus",
+                    "author": "Edmar Ferreira",
                     "unlocked": true
                 },
                 {
                     "id": 2,
                     "title": "Aprender, crescer e servir",
+                    "author": "Marcos Moraes",
                     "unlocked": true
                 },
                 {
                     "id": 3,
                     "title": "Por que Jesus veio ao mundo?",
+                    "author": "Manoel Rocha",
                     "unlocked": true
                 },
                 {
                     "id": 4,
                     "title": "O nascimento da igreja",
+                    "author": "Marcos Moraes",
                     "unlocked": true
                 },
                 {
                     "id": 5,
                     "title": "Porta, caminho e alvo",
+                    "author": "Marcos Moraes",
                     "unlocked": true
                 }
             ]
