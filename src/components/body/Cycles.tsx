@@ -15,7 +15,7 @@ export function Cycles() {
         fetch(pathToJson, {
             method: 'GET',
             mode: 'cors',
-            cache: 'force-cache',
+            cache: 'default',
             headers: {
                 'Content-Type': 'application/json',
             },
