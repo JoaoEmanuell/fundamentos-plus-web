@@ -2,6 +2,7 @@
 
 import { CenterTitle } from '../ui/CenterTitle'
 import { NumberGreenButtonWithText } from '../ui/NumberGreenButtonWithText'
+import { LessonPreview } from '../ui/LessonPreview'
 import { useState, useEffect } from 'react'
 
 interface CycleInterface {
@@ -11,6 +12,13 @@ interface CycleInterface {
 interface lessonInterface {
     id: number
     title: string
+    author:
+        | 'Edmar Ferreira'
+        | 'João Bium'
+        | 'Manoel Rocha'
+        | 'Marcos Moraes'
+        | 'Mario Fagundes'
+        | 'Vanjo Souza'
     unlocked: boolean
 }
 
@@ -70,16 +78,18 @@ export function CycleComponent(props: CycleInterface) {
             <CenterTitle text={title} />
             <div>
                 {lessons.map((lesson) => {
+                    console.log(lesson)
                     const lessonTitle = lesson['title']
                     const lessonUnlocked = lesson['unlocked']
                     const lessonId = lesson['id']
+                    const author = lesson['author']
                     if (lessonUnlocked) {
                         return (
                             <a key={lessonId} href={`/lesson/${lessonId}`}>
-                                <NumberGreenButtonWithText
-                                    buttonNumber={lessonId.toString()}
-                                    buttonEnable
-                                    text={lessonTitle}
+                                <LessonPreview
+                                    id={lessonId.toString()}
+                                    author={author}
+                                    title={lessonTitle}
                                 />
                             </a>
                         )

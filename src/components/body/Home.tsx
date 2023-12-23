@@ -5,6 +5,8 @@ import { CenterTitle } from '@/components/ui/CenterTitle'
 import { GetCookie } from '@/functions/cookies/GetCookie'
 import { useEffect, useState } from 'react'
 
+import { LessonPreview } from '../ui/LessonPreview'
+
 export function HomeComponent() {
     const [cycleInformation, setCycleInformation] =
         useState<JSX.Element | null>(null)
@@ -19,14 +21,34 @@ export function HomeComponent() {
                 </p>
             )
         } else {
-            setCycleInformation(
-                <p className="text-center">
-                    <a href={`/lesson/${lastLesson}`} className="underline">
-                        Clique aqui para acessar a ultima lição concluída por
-                        você!
-                    </a>
-                </p>
-            )
+            const origin = new URL(window.location.href).origin
+            const pathToJson = `${origin}/data/lessons/${lastLesson}.min.json`
+            fetch(pathToJson, {
+                method: 'GET',
+                mode: 'cors',
+                cache: 'force-cache',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            })
+                .then((res) => res.json())
+                .then((data) => {
+                    setCycleInformation(
+                        <p className="text-center">
+                            <a
+                                href={`/lesson/${lastLesson}`}
+                                className="underline"
+                            >
+                                Ultima lição concluída
+                                <LessonPreview
+                                    id={lastLesson}
+                                    author={data['author']}
+                                    title={data['title']}
+                                />
+                            </a>
+                        </p>
+                    )
+                })
         }
     }, [])
 
