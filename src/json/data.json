@@ -37,13 +37,14 @@
             ]
         },
         "2": {
-            "unlocked": false,
+            "unlocked": true,
             "title": "Jesus, sua vida e sua obra",
             "lessons": [
                 {
                     "id": 6,
                     "title": "Jesus é Deus",
-                    "unlocked": false
+                    "author": "Vanjo Souza",
+                    "unlocked": true
                 }
             ]
         },
