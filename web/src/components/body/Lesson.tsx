@@ -24,7 +24,8 @@ export function Lesson(props: LessonInterface) {
     const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
-        const pathToJson = `${process.env.PATH_TO_DATA}/data/lessons/${props.id}.min.json`
+        const origin = new URL(window.location.href).origin
+        const pathToJson = `${origin}/data/lessons/${props.id}.min.json`
         fetch(pathToJson, {
             method: 'GET',
             mode: 'cors',

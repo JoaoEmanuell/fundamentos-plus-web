@@ -10,7 +10,8 @@ export function Cycles() {
     const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
-        const pathToJson = `${process.env.PATH_TO_DATA}/data/data.min.json`
+        const origin = new URL(window.location.href).origin
+        const pathToJson = `${origin}/data/data.min.json`
         fetch(pathToJson, {
             method: 'GET',
             mode: 'cors',
