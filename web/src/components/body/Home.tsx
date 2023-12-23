@@ -39,7 +39,7 @@ export function HomeComponent() {
                         Seja bem vindo ao fundamentos plus!
                     </p>
                     <p className="text-center">
-                        Caso queira saber mais sobre o projeto{' '}
+                        Caso você deseje saber mais sobre o projeto{' '}
                         <a href="/about" className="underline">
                             clique aqui.
                         </a>
