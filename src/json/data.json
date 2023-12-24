@@ -63,6 +63,11 @@
                     "title": "Jesus, o Messias esperado",
                     "author": "Manoel Rocha",
                     "unlocked": true
+                }, {
+                    "id": 10,
+                    "title": "A vida de Jesus foi perfeita e irrepreensível",
+                    "author":"Marcos Moraes",
+                    "unlocked": true
                 }
             ]
         },
