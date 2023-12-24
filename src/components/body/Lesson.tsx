@@ -7,6 +7,7 @@ import { CenterDiv } from '../ui/CenterDiv'
 import { PageLesson } from './Lesson/PageLesson'
 import { GreenButton } from '../ui/GreenButton'
 import { SetCookie } from '@/functions/cookies/SetCookie'
+import { GetCookie } from '@/functions/cookies/GetCookie'
 
 interface LessonInterface {
     id: string
@@ -57,6 +58,11 @@ export function Lesson(props: LessonInterface) {
             // End lesson
             // Set cookies
             SetCookie('lastLesson', props.id)
+            const completedLessons = GetCookie('completedLessons')
+            if (completedLessons.indexOf(props.id) === -1) {
+                // if lesson not completed
+                SetCookie('completedLessons', `${completedLessons} ${props.id}`)
+            }
             window.location.href = `/end/${props.id}`
         } else if (actualPage + 1 === numberOfPages) {
             nextLessonPage()
