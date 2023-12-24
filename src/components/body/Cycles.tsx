@@ -38,6 +38,7 @@ export function Cycles() {
             {cyclesArray.map((key) => {
                 const title = cycles[key]['title']
                 const disable = cycles[key]['unlocked']
+                const lessons = cycles[key]['lessons']
                 return (
                     <div key={key}>
                         {disable ? (
@@ -46,7 +47,11 @@ export function Cycles() {
                                     buttonNumber={key}
                                     buttonEnable
                                     text={title}
-                                />
+                                >
+                                    <p className="text-sm text-greenText">
+                                        {lessons.length} Lições
+                                    </p>
+                                </NumberGreenButtonWithText>
                             </a>
                         ) : (
                             <NumberGreenButtonWithText
