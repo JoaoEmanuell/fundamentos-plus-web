@@ -45,6 +45,12 @@
                     "title": "Jesus é Deus",
                     "author": "Vanjo Souza",
                     "unlocked": true
+                },
+                {
+                    "id": 7,
+                    "title": "Jesus é Homem",
+                    "author": "Vanjo Souza",
+                    "unlocked": true
                 }
             ]
         },
