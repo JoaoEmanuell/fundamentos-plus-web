@@ -3,6 +3,11 @@ import { StyleInterface } from '../StyleInterface'
 import Markdown from 'react-markdown'
 
 export function FrameWithTitleAndBorder(props: StyleInterface) {
+    /* 
+    BorderColor | title | title color | text
+
+    #55730e | **Title** | #55730e | Text
+    */
     const contentSplit = props.content.split(' | ')
     const borderColor = contentSplit['0']
     const title = contentSplit['1']

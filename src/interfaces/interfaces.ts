@@ -43,6 +43,7 @@ export interface lessonPageInterface {
         | 'image'
         | 'text-highlight'
         | 'green-background-title'
+        | 'frame-with-title-and-border'
     content: string
     className?: string
 }
