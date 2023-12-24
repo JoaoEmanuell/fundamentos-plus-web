@@ -36,13 +36,13 @@ export default function EditPage() {
         'list-with-number-green-button-with-text',
         'text-for-complement-reading',
         'text-green',
-        'text-important-note',
         'table-with-green-header',
         'list-with-gray-background',
         'check-list',
         'image',
         'text-highlight',
         'green-background-title',
+        'frame-with-title-and-border',
     ]
 
     const setExportJsonInPreviewDiv = () => {
