@@ -35,11 +35,10 @@ export function HomeComponent() {
                 .then((data) => {
                     setCycleInformation(
                         <p className="text-center">
-                            <a
-                                href={`/lesson/${lastLesson}`}
-                                className="underline"
-                            >
-                                Ultima lição concluída
+                            <a href={`/lesson/${lastLesson}`}>
+                                <span className="underline">
+                                    Ultima lição concluída
+                                </span>
                                 <LessonPreview
                                     id={lastLesson}
                                     author={data['author']}
