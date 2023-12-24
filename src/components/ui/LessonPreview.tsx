@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import { PlayCircle, Trophy } from 'lucide-react'
 
 import { NumberGreenButton } from './NumberGreenButton'
 
@@ -14,6 +15,7 @@ interface LessonPreviewInterface {
         | 'Marcos Moraes'
         | 'Mario Fagundes'
         | 'Vanjo Souza'
+    completedLesson: boolean
 }
 
 export function LessonPreview(props: LessonPreviewInterface) {
@@ -31,9 +33,23 @@ export function LessonPreview(props: LessonPreviewInterface) {
                     ></Image>
                 </div>
             </div>
-            <div className="space-y-4">
+            <div className="space-y-2">
                 <NumberGreenButton text={props.id} enable />
                 <h2>{props.title}</h2>
+                <div>
+                    {props.completedLesson ? (
+                        <div className="border-2 border-greenButton rounded-full flex items-center justify-center p-1 w-8 h-8">
+                            <Trophy
+                                color="#55730e"
+                                strokeWidth={1}
+                                width={36}
+                                height={36}
+                            />
+                        </div>
+                    ) : (
+                        <PlayCircle color="#55730e" width={32} height={32} />
+                    )}
+                </div>
             </div>
         </div>
     )
