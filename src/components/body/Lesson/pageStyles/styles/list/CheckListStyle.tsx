@@ -2,6 +2,8 @@ import { getRandomElementKey } from '@/lib/randomElementKey'
 import { StyleInterface } from '../StyleInterface'
 import { Check } from 'lucide-react'
 
+import Markdown from 'react-markdown'
+
 export function CheckListStyle(props: StyleInterface) {
     /*
     Separate lines with |
@@ -14,7 +16,13 @@ export function CheckListStyle(props: StyleInterface) {
                 return (
                     <p key={getRandomElementKey()}>
                         <Check color="#55730e" className="inline mr-2" />
-                        <span>{text}</span>
+                        <Markdown
+                            components={{
+                                p: 'span',
+                            }}
+                        >
+                            {text}
+                        </Markdown>
                     </p>
                 )
             })}
