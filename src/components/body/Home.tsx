@@ -34,18 +34,25 @@ export function HomeComponent() {
                 .then((res) => res.json())
                 .then((data) => {
                     setCycleInformation(
-                        <p className="text-center">
-                            <a href={`/lesson/${lastLesson}`}>
-                                <span className="underline">
-                                    Ultima lição concluída
-                                </span>
-                                <LessonPreview
-                                    id={lastLesson}
-                                    author={data['author']}
-                                    title={data['title']}
-                                />
-                            </a>
-                        </p>
+                        <div>
+                            <p className="text-center">
+                                <a href={`/lesson/${lastLesson}`}>
+                                    <span className="underline">
+                                        Ultima lição concluída
+                                    </span>
+                                    <LessonPreview
+                                        id={lastLesson}
+                                        author={data['author']}
+                                        title={data['title']}
+                                    />
+                                </a>
+                            </p>
+                            <p className="text-center mt-4">
+                                <a href="/cycles" className="underline">
+                                    Clique aqui para acessar os ciclos
+                                </a>
+                            </p>
+                        </div>
                     )
                 })
         }
