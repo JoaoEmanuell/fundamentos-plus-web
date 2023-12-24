@@ -44,6 +44,7 @@ export function HomeComponent() {
                                         id={lastLesson}
                                         author={data['author']}
                                         title={data['title']}
+                                        completedLesson
                                     />
                                 </a>
                             </p>
