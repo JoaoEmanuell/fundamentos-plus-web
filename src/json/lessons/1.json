@@ -27,7 +27,7 @@
             {
                 "type": "green-separator",
                 "content": ""
-            }, 
+            },
             {
                 "type": "bible-text",
                 "content": "17 E quão preciosos me são, ó Deus, os teus pensamentos! Quão grandes são as somas deles! 18 Se as contasse, seriam em maior número do que a areia; quando acordo ainda estou contigo."
@@ -36,11 +36,12 @@
                 "type": "text-bold",
                 "content": "Salmos 139: 17 - 18"
             }
-        ], [
+        ],
+        [
             {
                 "type": "green-title",
                 "content": "1) O conselho de Deus"
-            }, 
+            },
             {
                 "type": "text-italic",
                 "content": "O que você entende por conselho? Quando alguém lhe pede um conselho, o que isso significa?"
@@ -133,7 +134,7 @@
             },
             {
                 "type": "table-with-index",
-                "content": "index:1 | TRÊS ANOS | CONTINUIDADE, index:2 | NOITE E DIA | INTENSIDADE, index:3 | NÃO CESSEI DE ADMOESTAR | CONCENTRAÇÃO, index:4 | COM LÁGRIMAS | SACRIFÍCIO, index:5 | A CADA UM | SIMPLICIDADE"
+                "content": "index:1 | TRÊS ANOS | CONTINUIDADE , index:2 | NOITE E DIA | INTENSIDADE , index:3 | NÃO CESSEI DE ADMOESTAR | CONCENTRAÇÃO , index:4 | COM LÁGRIMAS | SACRIFÍCIO , index:5 | A CADA UM | SIMPLICIDADE"
             },
             {
                 "type": "text",
