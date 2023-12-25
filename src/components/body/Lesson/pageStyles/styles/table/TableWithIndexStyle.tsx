@@ -6,13 +6,13 @@ export function TableWithIndexStyle(props: StyleInterface) {
     /*
     Table structure:
 
-        "index:string | string | string | ..., index:number | string | ..."
+        "index:string | string | string | ... , index:string | string | ..."
         , === lines,
         | === columns.
     */
 
     const content = props.content
-    const lines = content.split(', ')
+    const lines = content.split(' , ')
     const full_content: string[][] = []
     lines.map((line) => {
         full_content.push(line.split(' | '))
