@@ -7,9 +7,9 @@ export function TableWithGreenHeaderStyle(props: StyleInterface) {
     /*
     Table structure:
 
-        "header:string , line:string , line:string | header:string | line:string , line:string"
+        "header:string | line:string , line:string | header:string | line:string , line:string"
 
-        "header:ABC , CBD , DCS | header:ABC | ZXC , AQW"
+        "header:ABC | CBD , DCS | header:ABC | ZXC , AQW"
         , === lines,
         | === columns.
 
