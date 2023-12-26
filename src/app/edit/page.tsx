@@ -43,6 +43,7 @@ export default function EditPage() {
         'text-highlight',
         'green-background-title',
         'frame-with-title-and-border',
+        'list-with-arrow',
     ]
 
     const setExportJsonInPreviewDiv = () => {
