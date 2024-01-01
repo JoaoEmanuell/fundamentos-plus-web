@@ -92,8 +92,8 @@
                 "content": "O texto explica a seguir “...com vistas ao aperfeiçoamento dos santos para o desempenho do seu serviço, para a edificação do corpo de Cristo”"
             },
             {
-                "type": "text-important-note",
-                "content": "A palavra **Aperfeiçoamento** é a tradução de uma palavra grega **katartismos**, que aparece uma única vez na Bíblia. Ela envolve equipar, relacionar e mobilizar os santos para seu sacerdócio."
+                "type": "frame-with-title-and-border",
+                "content": "#55730e | **Observação importante:** | #55730e | A palavra **Aperfeiçoamento** é a tradução de uma palavra grega **katartismos**, que aparece uma única vez na Bíblia. Ela envolve equipar, relacionar e mobilizar os santos para seu sacerdócio."
             },
             {
                 "type": "text",

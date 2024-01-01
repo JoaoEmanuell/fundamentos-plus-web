@@ -7,38 +7,127 @@
                 {
                     "id": 1,
                     "title": "O conselho de Deus",
+                    "author": "Edmar Ferreira",
                     "unlocked": true
                 },
                 {
                     "id": 2,
                     "title": "Aprender, crescer e servir",
+                    "author": "Marcos Moraes",
                     "unlocked": true
                 },
                 {
                     "id": 3,
                     "title": "Por que Jesus veio ao mundo?",
+                    "author": "Manoel Rocha",
                     "unlocked": true
                 },
                 {
                     "id": 4,
                     "title": "O nascimento da igreja",
+                    "author": "Marcos Moraes",
                     "unlocked": true
                 },
                 {
                     "id": 5,
                     "title": "Porta, caminho e alvo",
+                    "author": "Marcos Moraes",
                     "unlocked": true
                 }
             ]
         },
         "2": {
-            "unlocked": false,
+            "unlocked": true,
             "title": "Jesus, sua vida e sua obra",
             "lessons": [
                 {
                     "id": 6,
                     "title": "Jesus é Deus",
-                    "unlocked": false
+                    "author": "Vanjo Souza",
+                    "unlocked": true
+                },
+                {
+                    "id": 7,
+                    "title": "Jesus é Homem",
+                    "author": "Vanjo Souza",
+                    "unlocked": true
+                },
+                {
+                    "id": 8,
+                    "title": "A Bíblia afirma: JESUS é Deus feito homem!",
+                    "author": "João Bium",
+                    "unlocked": true
+                },
+                {
+                    "id": 9,
+                    "title": "Jesus, o Messias esperado",
+                    "author": "Manoel Rocha",
+                    "unlocked": true
+                }, {
+                    "id": 10,
+                    "title": "A vida de Jesus foi perfeita e irrepreensível",
+                    "author":"Marcos Moraes",
+                    "unlocked": true
+                }, {
+                    "id": 11,
+                    "title": "Jesus fez uma obra tremenda e grandiosa",
+                    "author":"Vanjo Souza",
+                    "unlocked": true
+                }, {
+                    "id": 12,
+                    "title": "Jesus como nossa referência e modelo de obreiro",
+                    "author": "Mario Fagundes",
+                    "unlocked": true
+                }, {
+                    "id": 13,
+                    "title": "O que Jesus ensinou?",
+                    "author": "Marcos Moraes",
+                    "unlocked": true
+                }, {
+                    "id": 14,
+                    "title": "O Evangelho do Reino de Deus",
+                    "author": "Vanjo Souza",
+                    "unlocked": true
+                }, {
+                    "id": 15,
+                    "title": "As 5 características de um discípulo",
+                    "author": "Vanjo Souza",
+                    "unlocked": true
+                }, {
+                    "id": 16,
+                    "title": "Jesus anunciava e aplicava o evangelho",
+                    "author": "Marcos Moraes",
+                    "unlocked": true
+                }, {
+                    "id": 17,
+                    "title": "Jesus morreu na cruz",
+                    "author": "Mario Fagundes",
+                    "unlocked": true
+                }, {
+                    "id": 18,
+                    "title": "Jesus desceu ao hades",
+                    "author": "Marcos Moraes",
+                    "unlocked": true
+                }, {
+                    "id": 19,
+                    "title": "Jesus ressuscitou - parte 1",
+                    "author": "João Bium",
+                    "unlocked": true
+                }, {
+                    "id": 20,
+                    "title": "Jesus ressuscitou - parte 2",
+                    "author": "Manoel Rocha",
+                    "unlocked": true
+                }, {
+                    "id": 21,
+                    "title": "Jesus foi exaltado à destra do Pai",
+                    "author": "Edmar Ferreira",
+                    "unlocked": true
+                }, {
+                    "id": 22,
+                    "title": "Jesus após a exaltação",
+                    "author": "Marcos Moraes",
+                    "unlocked": true
                 }
             ]
         },

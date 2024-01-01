@@ -43,6 +43,8 @@ export interface lessonPageInterface {
         | 'image'
         | 'text-highlight'
         | 'green-background-title'
+        | 'frame-with-title-and-border'
+        | 'list-with-arrow'
     content: string
     className?: string
 }

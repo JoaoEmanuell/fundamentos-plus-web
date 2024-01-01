@@ -36,14 +36,38 @@ export default function EditPage() {
         'list-with-number-green-button-with-text',
         'text-for-complement-reading',
         'text-green',
-        'text-important-note',
         'table-with-green-header',
         'list-with-gray-background',
         'check-list',
         'image',
         'text-highlight',
         'green-background-title',
+        'frame-with-title-and-border',
+        'list-with-arrow',
     ]
+
+    const paragraphsAlias = {
+        'title green': 'green-title',
+        text: 'text',
+        'green separator': 'green-separator',
+        bible: 'bible-text',
+        bold: 'text-bold',
+        'sub title green': 'green-sub-title',
+        'table with index': 'table-with-index',
+        italic: 'text-italic',
+        'list with number green button with text':
+            'list-with-number-green-button-with-text',
+        'complement reading': 'text-for-complement-reading',
+        'green text': 'text-green',
+        'table with green header': 'table-with-green-header',
+        'list with gray background': 'list-with-gray-background',
+        checklist: 'check-list',
+        image: 'image',
+        'highlight text': 'text-highlight',
+        'green background title': 'green-background-title',
+        'frame with title and border': 'frame-with-title-and-border',
+        'list with arrow': 'list-with-arrow',
+    }
 
     const setExportJsonInPreviewDiv = () => {
         setPreviewDiv(
@@ -74,8 +98,9 @@ export default function EditPage() {
     }
 
     const clickAddButton = () => {
-        const selectedType = typeSelectRef.current
-            ?.value as lessonPageInterface['type']
+        const selectedAlias =
+            paragraphsAlias[typeSelectRef.current?.value as string]
+        const selectedType = selectedAlias as lessonPageInterface['type']
 
         const contentText = contentTextRef.current?.value as string
 
@@ -88,12 +113,7 @@ export default function EditPage() {
         }
 
         // create a preview
-        // add to preview div
-        // const oldElements = previewDiv
-
         setExportJsonInPreviewDiv()
-        // clear text input
-        // contentTextRef.current?.setAttribute('value', '')
     }
 
     const deletePreview = (previewId: string) => {
@@ -149,7 +169,7 @@ export default function EditPage() {
                         className="bg-greenButton text-white py-2"
                         ref={typeSelectRef}
                     >
-                        {paragraphsTypes.map((type) => {
+                        {Object.keys(paragraphsAlias).map((type) => {
                             return (
                                 <option
                                     value={type}

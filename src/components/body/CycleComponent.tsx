@@ -2,7 +2,9 @@
 
 import { CenterTitle } from '../ui/CenterTitle'
 import { NumberGreenButtonWithText } from '../ui/NumberGreenButtonWithText'
+import { LessonPreview } from '../ui/LessonPreview'
 import { useState, useEffect } from 'react'
+import { GetCookie } from '@/functions/cookies/GetCookie'
 
 interface CycleInterface {
     id: string
@@ -11,6 +13,13 @@ interface CycleInterface {
 interface lessonInterface {
     id: number
     title: string
+    author:
+        | 'Edmar Ferreira'
+        | 'João Bium'
+        | 'Manoel Rocha'
+        | 'Marcos Moraes'
+        | 'Mario Fagundes'
+        | 'Vanjo Souza'
     unlocked: boolean
 }
 
@@ -19,6 +28,9 @@ export function CycleComponent(props: CycleInterface) {
     const [cycles, setCycles] = useState<object | any>()
     const [isLoading, setIsLoading] = useState(true)
     const [unlockedCycle, setUnlockedCycle] = useState<boolean | null>(null)
+    const [completedLessons, setCompletedLessons] = useState<string[] | null>(
+        null
+    )
 
     useEffect(() => {
         const origin = new URL(window.location.href).origin
@@ -38,6 +50,9 @@ export function CycleComponent(props: CycleInterface) {
                     setCycles(data['cycles']) // set the cycles
                     setUnlockedCycle(data['cycles'][props.id]['unlocked'])
                     var status = data['cycles'][props.id]['unlocked']
+                    setCompletedLessons(
+                        GetCookie('completedLessons').split(' ')
+                    )
                     setIsLoading(false)
                 } catch (err) {
                     setUnlockedCycle(false)
@@ -73,13 +88,25 @@ export function CycleComponent(props: CycleInterface) {
                     const lessonTitle = lesson['title']
                     const lessonUnlocked = lesson['unlocked']
                     const lessonId = lesson['id']
+                    const author = lesson['author']
+                    const completedLessonStatus = completedLessons?.indexOf(
+                        lessonId.toString()
+                    )
+                    var completedLessonBoolean: boolean | null
+                    if (completedLessonStatus === -1) {
+                        // lesson not completed
+                        completedLessonBoolean = false
+                    } else {
+                        completedLessonBoolean = true
+                    }
                     if (lessonUnlocked) {
                         return (
                             <a key={lessonId} href={`/lesson/${lessonId}`}>
-                                <NumberGreenButtonWithText
-                                    buttonNumber={lessonId.toString()}
-                                    buttonEnable
-                                    text={lessonTitle}
+                                <LessonPreview
+                                    id={lessonId.toString()}
+                                    author={author}
+                                    title={lessonTitle}
+                                    completedLesson={completedLessonBoolean}
                                 />
                             </a>
                         )

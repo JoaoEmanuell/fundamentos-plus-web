@@ -1,4 +1,5 @@
 import { NumberGreenButton } from './NumberGreenButton'
+import { PropsWithChildren } from 'react'
 
 interface NumberGreenButtonWithTextProps {
     buttonNumber: string
@@ -8,7 +9,7 @@ interface NumberGreenButtonWithTextProps {
 }
 
 export function NumberGreenButtonWithText(
-    props: NumberGreenButtonWithTextProps
+    props: PropsWithChildren<NumberGreenButtonWithTextProps>
 ) {
     return (
         <div className="mb-4 flex justify-start items-center">
@@ -16,7 +17,12 @@ export function NumberGreenButtonWithText(
                 text={props.buttonNumber}
                 enable={props.buttonEnable}
             />
-            <h1 className={`text-base ${props.textClassName}`}>{props.text}</h1>
+            <div>
+                <h1 className={`text-base ${props.textClassName}`}>
+                    {props.text}
+                </h1>
+                {props.children}
+            </div>
         </div>
     )
 }
