@@ -67,6 +67,14 @@ export function BurgerMenu() {
                             <li className="mb-1">
                                 <a
                                     className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-greenButton rounded"
+                                    href="/search"
+                                >
+                                    Pesquisa
+                                </a>
+                            </li>
+                            <li className="mb-1">
+                                <a
+                                    className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-greenButton rounded"
                                     href="/about"
                                 >
                                     Sobre
