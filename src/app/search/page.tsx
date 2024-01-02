@@ -33,12 +33,10 @@ export default function SearchPage() {
 
     const searchInputRef = useRef<HTMLInputElement | null>(null)
 
-    const urlToPage = new URL(window.location.href).origin
-
     // load the data json
 
     useEffect(() => {
-        const origin = urlToPage
+        const origin = new URL(window.location.href).origin
         const pathToJson = `${origin}/data/data.min.json`
         fetch(pathToJson, {
             method: 'GET',
@@ -63,7 +61,7 @@ export default function SearchPage() {
         author: authorType,
         valueToSearch: string
     ) => {
-        const origin = urlToPage
+        const origin = new URL(window.location.href).origin
         const pathToJson = `${origin}/data/lessons/${id}.min.json`
         fetch(pathToJson, {
             method: 'GET',
