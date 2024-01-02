@@ -132,13 +132,14 @@
             ]
         },
         "3": {
-            "unlocked": false,
+            "unlocked": true,
             "title": "A Volta de Jesus",
             "lessons": [
                 {
                     "id": 23,
                     "title": "Por que e como estudar sobre a volta de Jesus?",
-                    "unlocked": false
+                    "author": "Gilberto Bajo",
+                    "unlocked": true
                 }
             ]
         },
