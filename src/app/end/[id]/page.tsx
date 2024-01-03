@@ -14,7 +14,7 @@ export default function EndPage() {
             <div className="space-y-4">
                 <CenterDiv>
                     <Image
-                        src="/img/completedlesson.png"
+                        src="/img/completedlesson.webp"
                         alt="completed lesson"
                         width={200}
                         height={200}

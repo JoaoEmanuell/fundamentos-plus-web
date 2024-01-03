@@ -28,7 +28,7 @@ export function LessonPreview(props: LessonPreviewInterface) {
                     <Image
                         src={`/img/cycles_thumbs/${props.author
                             .toLowerCase()
-                            .replaceAll(' ', '-')}.jpg`}
+                            .replaceAll(' ', '-')}.webp`}
                         alt={`Image of ${props.author}`}
                         fill
                         className="rounded-2xl"
