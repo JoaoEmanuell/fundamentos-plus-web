@@ -47,6 +47,7 @@ export interface lessonPageInterface {
         | 'green-background-title'
         | 'frame-with-title-and-border'
         | 'list-with-arrow'
+        | 'multi-text'
     content: string
     className?: string
 }

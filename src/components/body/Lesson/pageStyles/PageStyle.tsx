@@ -18,6 +18,7 @@ import { TextHighlight } from './styles/text/TextHighlight'
 import { GreenBackgroundTitleStyle } from './styles/green/GreenBackgroundTitleStyle'
 import { FrameWithTitleAndBorder } from './styles/others/FrameWithTitleAndBorder'
 import { ListWithArrowStyle } from './styles/list/ListWithArrowStyle'
+import { MultiTextStyle } from './styles/text/MultiText'
 
 export function PageStyles(props: lessonPageInterface) {
     const styles = {
@@ -41,6 +42,7 @@ export function PageStyles(props: lessonPageInterface) {
         'green-background-title': GreenBackgroundTitleStyle,
         'frame-with-title-and-border': FrameWithTitleAndBorder,
         'list-with-arrow': ListWithArrowStyle,
+        'multi-text': MultiTextStyle,
     }
 
     // If not exists the type in styles
