@@ -193,8 +193,13 @@
                     "unlocked": true
                 }, {
                     "id": 33,
-                    "title": "Apocalipse - Parte III Os últimos acontecimentos",
+                    "title": "Apocalipse - Parte III - Os acontecimentos finais",
                     "author": "Benito Lopez",
+                    "unlocked": true
+                }, {
+                    "id": 34,
+                    "title": "Apocalipse - Parte IV - O milênio",
+                    "author": "Marcos Moraes",
                     "unlocked": true
                 }
             ]
