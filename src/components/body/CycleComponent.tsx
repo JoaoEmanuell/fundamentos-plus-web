@@ -14,7 +14,9 @@ interface lessonInterface {
     id: number
     title: string
     author:
+        | 'Benito Lopez'
         | 'Edmar Ferreira'
+        | 'Gilberto Bajo'
         | 'João Bium'
         | 'Manoel Rocha'
         | 'Marcos Moraes'

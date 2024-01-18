@@ -1,7 +1,9 @@
 export interface lessonInterface {
     title: string
     author:
+        | 'Benito Lopez'
         | 'Edmar Ferreira'
+        | 'Gilberto Bajo'
         | 'João Bium'
         | 'Manoel Rocha'
         | 'Marcos Moraes'
@@ -45,6 +47,7 @@ export interface lessonPageInterface {
         | 'green-background-title'
         | 'frame-with-title-and-border'
         | 'list-with-arrow'
+        | 'multi-text'
     content: string
     className?: string
 }
