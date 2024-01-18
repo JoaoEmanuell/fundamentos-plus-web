@@ -44,6 +44,7 @@ export default function EditPage() {
         'green-background-title',
         'frame-with-title-and-border',
         'list-with-arrow',
+        'multi-text',
     ]
 
     const paragraphsAlias = {
@@ -67,6 +68,7 @@ export default function EditPage() {
         'green background title': 'green-background-title',
         'frame with title and border': 'frame-with-title-and-border',
         'list with arrow': 'list-with-arrow',
+        'multi text': 'multi-text',
     }
 
     const setExportJsonInPreviewDiv = () => {

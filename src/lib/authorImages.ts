@@ -1,8 +1,10 @@
 export const authorImages = {
-    'Edmar Ferreira': '/img/apostolos/edmar-ferreira.png',
-    'João Bium': '/img/apostolos/joao-bium.png',
-    'Manoel Rocha': '/img/apostolos/manoel-rocha.png',
-    'Marcos Moraes': '/img/apostolos/marcos-moraes.png',
-    'Mario Fagundes': '/img/apostolos/mario-fagundes.png',
-    'Vanjo Souza': '/img/apostolos/vanjo-souza.png',
+    'Benito Lopez': '/img/apostolos/benito-lopez.webp',
+    'Edmar Ferreira': '/img/apostolos/edmar-ferreira.webp',
+    'Gilberto Bajo': '/img/apostolos/gilberto-bajo.webp',
+    'João Bium': '/img/apostolos/joao-bium.webp',
+    'Manoel Rocha': '/img/apostolos/manoel-rocha.webp',
+    'Marcos Moraes': '/img/apostolos/marcos-moraes.webp',
+    'Mario Fagundes': '/img/apostolos/mario-fagundes.webp',
+    'Vanjo Souza': '/img/apostolos/vanjo-souza.webp',
 }

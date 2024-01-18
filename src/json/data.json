@@ -132,13 +132,80 @@
             ]
         },
         "3": {
-            "unlocked": false,
+            "unlocked": true,
             "title": "A Volta de Jesus",
             "lessons": [
                 {
                     "id": 23,
                     "title": "Por que e como estudar sobre a volta de Jesus?",
-                    "unlocked": false
+                    "author": "Gilberto Bajo",
+                    "unlocked": true
+                },
+                {
+                    "id": 24,
+                    "title": "O que Jesus ensinou sobre sua volta",
+                    "author": "Gilberto Bajo",
+                    "unlocked": true
+                },
+                {
+                    "id": 25,
+                    "title": "As setenta semanas de Daniel e o abominável da desolação",
+                    "author": "Benito Lopez",
+                    "unlocked": true
+                },
+                {
+                    "id": 26,
+                    "title": "A volta de Jesus, o ensino apostólico Parte I",
+                    "author": "Benito Lopez",
+                    "unlocked": true
+                },
+                {
+                    "id": 27,
+                    "title": "A volta de Jesus, o ensino apostólico Parte II",
+                    "author": "Benito Lopez",
+                    "unlocked": true
+                },
+                {
+                    "id": 28,
+                    "title": "A volta de Jesus, o ensino apostólico Parte III",
+                    "author": "Edmar Ferreira",
+                    "unlocked": true
+                },
+                {
+                    "id": 29,
+                    "title": "O Jesus que virá",
+                    "author": "Gilberto Bajo",
+                    "unlocked": true
+                }, {
+                    "id": 30,
+                    "title": "Arrebatamento secreto?",
+                    "author": "Marcos Moraes",
+                    "unlocked": true
+                }, {
+                    "id": 31,
+                    "title": "Apocalipse - Parte I As Cartas às sete igrejas",
+                    "author": "Marcos Moraes",
+                    "unlocked": true
+                }, {
+                    "id": 32,
+                    "title": "Apocalipse - Parte II O Cordeiro, os selos e as trombetas",
+                    "author": "Benito Lopez",
+                    "unlocked": true
+                }, {
+                    "id": 33,
+                    "title": "Apocalipse - Parte III - Os acontecimentos finais",
+                    "author": "Benito Lopez",
+                    "unlocked": true
+                }, {
+                    "id": 34,
+                    "title": "Apocalipse - Parte IV - O milênio",
+                    "author": "Marcos Moraes",
+                    "unlocked": true
+                }, {
+                    "id": 35,
+                    "title": "Jesus volta para os fiéis e prudentes",
+                    "author": "Marcos Moraes",
+                    "unlocked": true
                 }
             ]
         },
