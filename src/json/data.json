@@ -210,13 +210,14 @@
             ]
         },
         "4": {
-            "unlocked": false,
+            "unlocked": true,
             "title": "Jesus é a Porta do Reino",
             "lessons": [
                 {
                     "id": 36,
                     "title": "Convicção de pecados",
-                    "unlocked": false
+                    "author": "Vanjo Souza",
+                    "unlocked": true
                 }
             ]
         },
