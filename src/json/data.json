@@ -210,13 +210,38 @@
             ]
         },
         "4": {
-            "unlocked": false,
+            "unlocked": true,
             "title": "Jesus é a Porta do Reino",
             "lessons": [
                 {
                     "id": 36,
                     "title": "Convicção de pecados",
-                    "unlocked": false
+                    "author": "Vanjo Souza",
+                    "unlocked": true
+                },
+                {
+                    "id": 37,
+                    "title": "A fé que salva - Parte I",
+                    "author": "Manoel Rocha",
+                    "unlocked": true
+                },
+                {
+                    "id": 38,
+                    "title": "A fé que salva - Parte II",
+                    "author": "Manoel Rocha",
+                    "unlocked": true
+                },
+                {
+                    "id": 39,
+                    "title": "Arrependimento - Parte I",
+                    "author": "João Bium",
+                    "unlocked": true
+                },
+                {
+                    "id": 40,
+                    "title": "Arrependimento - Parte II",
+                    "author": "João Bium",
+                    "unlocked": true
                 }
             ]
         },
