@@ -12,7 +12,9 @@ export function BibleTextStyle(props: StyleInterface) {
         return (
             <em className={`text-lg text-center px-4 ${props.className}`}>
                 <Markdown>{bibleText}</Markdown>
-                <TextBoldStyle content={reference} className="mt-4" />
+                <span style={{ fontStyle: 'normal' }}>
+                    <TextBoldStyle content={reference} className="mt-4" />
+                </span>
             </em>
         )
     } else {
