@@ -352,31 +352,5 @@
             "title": "Nossa caminhada",
             "lessons": []
         }
-    }, 
-    "lessons": {
-        "2": {
-            "title": "Aprender, crescer e servir",
-            "author": "",
-            "description": [],
-            "video": ""
-        },
-        "3": {
-            "title": "Por que Jesus veio ao mundo?",
-            "author": "",
-            "description": [],
-            "video": ""
-        },
-        "4": {
-            "title": "O nascimento da igreja",
-            "author": "",
-            "description": [],
-            "video": ""
-        },
-        "5": {
-            "title": "Porta, caminho e alvo",
-            "author": "",
-            "description": [],
-            "video": ""
-        }
     }
 }
