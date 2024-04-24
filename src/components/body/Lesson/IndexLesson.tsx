@@ -5,6 +5,7 @@ import { CenterDiv } from '../../ui/CenterDiv'
 import { NumberGreenButtonWithText } from '../../ui/NumberGreenButtonWithText'
 import { YouTubeIframe } from '../../ui/YouTubeIframe'
 import Image from 'next/image'
+import Markdown from 'react-markdown'
 
 interface IndexLessonInterface {
     id: string
@@ -44,9 +45,12 @@ export function IndexLesson(props: IndexLessonInterface) {
             <div className="space-y-2">
                 {description.map((paragraph) => {
                     return (
-                        <p className="text-center" key={getRandomElementKey()}>
+                        <Markdown
+                            className="text-center"
+                            key={getRandomElementKey()}
+                        >
                             {paragraph}
-                        </p>
+                        </Markdown>
                     )
                 })}
             </div>
