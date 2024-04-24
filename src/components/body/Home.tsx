@@ -67,6 +67,7 @@ export function HomeComponent() {
                         </div>
                     )
                 })
+            setFooterPosition('bottom-0') // Reset footer position
         }
         // get the last lesson registered in application
         const origin = new URL(window.location.href).origin
@@ -107,6 +108,7 @@ export function HomeComponent() {
                         </p>
                     </CenterDiv>
                 )
+                setFooterPosition('bottom-0') // Reset footer position
             })
     }, [])
 
