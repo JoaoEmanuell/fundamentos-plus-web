@@ -48,6 +48,7 @@ export interface lessonPageInterface {
         | 'frame-with-title-and-border'
         | 'list-with-arrow'
         | 'multi-text'
+        | 'multi-bible'
     content: string
     className?: string
 }
