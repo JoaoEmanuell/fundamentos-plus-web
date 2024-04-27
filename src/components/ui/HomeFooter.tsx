@@ -3,15 +3,12 @@ import { Home, FileText, Search } from 'lucide-react'
 interface footerInterface {
     clickHome?: () => void
     clickCycles?: () => void
-    footerPosition?: string
 }
 
 export function HomeFooter(props: footerInterface) {
     const iconsClassName = 'cursor-pointer hover:scale-110 transition-all'
     return (
-        <footer
-            className={`absolute flex justify-between w-full px-2 align-bottom left-0 ${props.footerPosition}`}
-        >
+        <footer className={`flex justify-between w-full px-2 left-0 mt-4 `}>
             <Home
                 onClick={props.clickHome}
                 className={iconsClassName}
