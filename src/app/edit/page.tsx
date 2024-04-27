@@ -24,29 +24,6 @@ export default function EditPage() {
 
     const [resultDiv, setResultDiv] = useState<JSX.Element | null>(null)
 
-    const paragraphsTypes = [
-        'green-title',
-        'text',
-        'green-separator',
-        'bible-text',
-        'text-bold',
-        'green-sub-title',
-        'table-with-index',
-        'text-italic',
-        'list-with-number-green-button-with-text',
-        'text-for-complement-reading',
-        'text-green',
-        'table-with-green-header',
-        'list-with-gray-background',
-        'check-list',
-        'image',
-        'text-highlight',
-        'green-background-title',
-        'frame-with-title-and-border',
-        'list-with-arrow',
-        'multi-text',
-    ]
-
     const paragraphsAlias = {
         'title green': 'green-title',
         text: 'text',
@@ -69,6 +46,7 @@ export default function EditPage() {
         'frame with title and border': 'frame-with-title-and-border',
         'list with arrow': 'list-with-arrow',
         'multi text': 'multi-text',
+        'multi bible': 'multi-bible',
     }
 
     const setExportJsonInPreviewDiv = () => {

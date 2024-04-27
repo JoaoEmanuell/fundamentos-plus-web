@@ -19,6 +19,7 @@ import { GreenBackgroundTitleStyle } from './styles/green/GreenBackgroundTitleSt
 import { FrameWithTitleAndBorder } from './styles/others/FrameWithTitleAndBorder'
 import { ListWithArrowStyle } from './styles/list/ListWithArrowStyle'
 import { MultiTextStyle } from './styles/text/MultiText'
+import { MultiBibleStyle } from './styles/text/MultiBible'
 
 export function PageStyles(props: lessonPageInterface) {
     const styles = {
@@ -43,6 +44,7 @@ export function PageStyles(props: lessonPageInterface) {
         'frame-with-title-and-border': FrameWithTitleAndBorder,
         'list-with-arrow': ListWithArrowStyle,
         'multi-text': MultiTextStyle,
+        'multi-bible': MultiBibleStyle,
     }
 
     // If not exists the type in styles
