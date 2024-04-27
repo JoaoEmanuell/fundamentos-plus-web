@@ -26,19 +26,16 @@ export function HomeComponent() {
         'hidden'
     )
     const mainHomeVisibleRef = useRef<HTMLDivElement | null>(null)
-    const [footerPosition, setFooterPosition] = useState('bottom-0 left-0')
 
     const clickHome = () => {
         setCyclesVisible('hidden')
         setMainHomeVisible('visible')
-        setFooterPosition('bottom-0') // Reset footer position
         window.scrollTo(0, 0) // User go to page top
     }
 
     const clickCycles = () => {
         setMainHomeVisible('hidden')
         setCyclesVisible('visible')
-        setFooterPosition('align-bottom	left-0') // Reset footer position
     }
 
     useEffect(() => {
@@ -67,7 +64,6 @@ export function HomeComponent() {
                         </div>
                     )
                 })
-            setFooterPosition('bottom-0') // Reset footer position
         }
         // get the last lesson registered in application
         const origin = new URL(window.location.href).origin
@@ -108,7 +104,6 @@ export function HomeComponent() {
                         </p>
                     </CenterDiv>
                 )
-                setFooterPosition('bottom-0') // Reset footer position
             })
     }, [])
 
@@ -156,11 +151,7 @@ export function HomeComponent() {
                 {cyclesVisible === 'hidden' ? null : <Cycles />}
             </CenterDiv>
 
-            <HomeFooter
-                clickHome={clickHome}
-                clickCycles={clickCycles}
-                footerPosition={footerPosition}
-            />
+            <HomeFooter clickHome={clickHome} clickCycles={clickCycles} />
         </main>
     )
 }
