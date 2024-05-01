@@ -2,6 +2,7 @@
 // modified
 
 export function BurgerMenu() {
+    const year = new Date().getFullYear()
     return (
         <div>
             <nav className="relative flex justify-between items-center">
@@ -84,7 +85,7 @@ export function BurgerMenu() {
                     </div>
                     <div className="mt-auto">
                         <p className="my-4 text-xs text-center text-gray-400">
-                            <span>Fundamentos plus web © 2023</span>
+                            <span>Fundamentos plus web © {year}</span>
                         </p>
                     </div>
                 </nav>
