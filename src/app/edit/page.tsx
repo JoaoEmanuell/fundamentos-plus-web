@@ -133,6 +133,13 @@ export default function EditPage() {
                         paragrafo e gerar um json contendo uma página de uma
                         lição!
                     </p>
+                    <p>
+                        <a href="/help" target="_blank">
+                            Caso você deseje saber mais sobre os estilos
+                            disponíveis,{' '}
+                            <span className="underline">clique aqui</span>.
+                        </a>
+                    </p>
                 </div>
             </CenterDiv>
             <div
