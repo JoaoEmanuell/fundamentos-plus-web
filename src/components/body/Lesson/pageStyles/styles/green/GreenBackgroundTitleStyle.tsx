@@ -1,3 +1,4 @@
+import Markdown from 'react-markdown'
 import { StyleInterface } from '../StyleInterface'
 
 export function GreenBackgroundTitleStyle(props: StyleInterface) {
@@ -6,7 +7,7 @@ export function GreenBackgroundTitleStyle(props: StyleInterface) {
             <h1
                 className={`text-2xl font-bold text-center text-white ${props.className}`}
             >
-                {props.content}
+                <Markdown>{props.content}</Markdown>
             </h1>
         </div>
     )
