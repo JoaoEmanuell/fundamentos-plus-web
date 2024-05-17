@@ -34,7 +34,7 @@ const lessonStructure = {
 const cycleNumber = prompt("Número do ciclo: ")
 const lessonNumber = Number(prompt("Id da lição: "))
 const name = prompt("Nome da lição: ")
-const pdfName = `${name.toLocaleLowerCase().replaceAll(' ', '-')}_compressed.pdf`
+const pdfName = `${name.toLocaleLowerCase().replaceAll(' ', '-')}_compressed.pdf`.replaceAll('---', '-')
 const author = prompt("Nome do autor: ")
 const video = prompt("Link do embed: ")
 
