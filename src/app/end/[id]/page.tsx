@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation'
 import Image from 'next/image'
 import { NumberGreenButton } from '@/components/ui/NumberGreenButton'
 import { GreenButton } from '@/components/ui/GreenButton'
+import { SetCookie } from '@/functions/cookies/SetCookie'
 
 export default function EndPage() {
     const params = useParams()
@@ -35,6 +36,7 @@ export default function EndPage() {
                     <GreenButton
                         text="Continuar"
                         onClick={() => {
+                            SetCookie('lastLessonAndPage', '')
                             document.location.href = `/lesson/${id}`
                         }}
                     ></GreenButton>
