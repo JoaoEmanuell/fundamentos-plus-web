@@ -43,17 +43,19 @@ export function Lesson(props: LessonInterface) {
                 setLesson(<IndexLesson id={props.id} lesson={data} />) // set the lesson description
                 setLessonButtonHidden(false) // show the start button
                 setIsLoading(false)
-                const lastLessonAndPageCookie = GetCookie('lastLessonAndPage')
-                if (lastLessonAndPageCookie !== '') {
-                    const lastLesson = lastLessonAndPageCookie.split(' | ')[0]
-                    const lastPage = lastLessonAndPageCookie.split(' | ')[1]
-                    if (lastLesson === props.id) {
+                try {
+                    const lastLessonAndPageCookie = JSON.parse(
+                        GetCookie('lastLessonAndPage')
+                    )
+                    if (lastLessonAndPageCookie[props.id] !== undefined) {
+                        const lastPage = lastLessonAndPageCookie[props.id][0]
+
                         setLessonButtonText(
                             `Continuar ${lastPage}/${data['pages'].length}`
                         )
                         setLastLessonPage(lastPage)
                     }
-                }
+                } catch (err) {}
             })
     }, []) // Load the description in the first execution
 
@@ -68,11 +70,10 @@ export function Lesson(props: LessonInterface) {
             page = <PageLesson lesson={lessonJson} page={forcedPage - 1} />
             actualPageMoreOne = forcedPage
         }
-        console.log(actualPage)
         setLesson(page)
         setReturnButtonHidden(false)
         window.scrollTo(0, 0) // User go to page top
-        SetCookie('lastLessonAndPage', `${props.id} | ${actualPageMoreOne}`) // set the cookie with page
+        setLastPage(actualPageMoreOne)
     }
 
     const startLesson = () => {
@@ -117,7 +118,7 @@ export function Lesson(props: LessonInterface) {
             setLessonButtonText(`Iniciar lição`)
             setActualPage(0)
             window.scrollTo(0, 0)
-            SetCookie('lastLessonAndPage', '')
+            setLastPage('')
         } else {
             const page = (
                 <PageLesson lesson={lessonJson} page={actualPage - 2} />
@@ -126,8 +127,20 @@ export function Lesson(props: LessonInterface) {
             setActualPage(actualPage - 1)
             setLessonButtonText(`Próximo ${actualPage - 1}/${numberOfPages}`)
             window.scrollTo(0, 0)
-            SetCookie('lastLessonAndPage', `${props.id} | ${actualPage - 1}`)
+            setLastPage(actualPage - 1)
         }
+    }
+
+    const setLastPage = (page: Number | string) => {
+        let json
+        try {
+            json = JSON.parse(GetCookie('lastLessonAndPage'))
+        } catch (err) {
+            // cookie is not a json
+            json = {}
+        }
+        json[props.id] = [page, numberOfPages] // [last page, total pages] is used to calculate the percent
+        SetCookie('lastLessonAndPage', JSON.stringify(json))
     }
 
     // while the json not load
