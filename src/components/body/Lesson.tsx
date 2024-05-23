@@ -2,7 +2,7 @@
 
 import { lessonInterface } from '@/interfaces/interfaces'
 import { IndexLesson } from './Lesson/IndexLesson'
-import { useEffect, useState } from 'react'
+import { SetStateAction, useEffect, useState } from 'react'
 import { CenterDiv } from '../ui/CenterDiv'
 import { PageLesson } from './Lesson/PageLesson'
 import { GreenButton } from '../ui/GreenButton'
@@ -23,6 +23,7 @@ export function Lesson(props: LessonInterface) {
     const [numberOfPages, setNumberOfPages] = useState<number>(0)
     const [lessonJson, setLessonJson] = useState<lessonInterface | any>()
     const [isLoading, setIsLoading] = useState(true)
+    const [lastLessonPage, setLastLessonPage] = useState<string | null>(null)
 
     useEffect(() => {
         const origin = new URL(window.location.href).origin
@@ -42,19 +43,53 @@ export function Lesson(props: LessonInterface) {
                 setLesson(<IndexLesson id={props.id} lesson={data} />) // set the lesson description
                 setLessonButtonHidden(false) // show the start button
                 setIsLoading(false)
+                try {
+                    const lastLessonAndPageCookie = JSON.parse(
+                        GetCookie('lastLessonAndPage')
+                    )
+                    if (lastLessonAndPageCookie[props.id] !== undefined) {
+                        const lastPage = lastLessonAndPageCookie[props.id][0]
+
+                        setLessonButtonText(
+                            `Continuar ${lastPage}/${data['pages'].length}`
+                        )
+                        setLastLessonPage(lastPage)
+                    }
+                } catch (err) {}
             })
     }, []) // Load the description in the first execution
 
-    const nextLessonPage = () => {
-        const page = <PageLesson lesson={lessonJson} page={actualPage} />
+    const nextLessonPage = (forcedPage: number = -1) => {
+        let page: JSX.Element
+        let actualPageMoreOne: Number
+        if (forcedPage === -1) {
+            page = <PageLesson lesson={lessonJson} page={actualPage} />
+            actualPageMoreOne = actualPage + 1
+            setActualPage(actualPageMoreOne as SetStateAction<number>)
+        } else {
+            page = <PageLesson lesson={lessonJson} page={forcedPage - 1} />
+            actualPageMoreOne = forcedPage
+        }
         setLesson(page)
-        setActualPage(actualPage + 1)
         setReturnButtonHidden(false)
         window.scrollTo(0, 0) // User go to page top
+        setLastPage(actualPageMoreOne)
     }
 
     const startLesson = () => {
-        if (lessonButtonText === 'Finalizar') {
+        if (lessonButtonText.includes('Continuar')) {
+            console.log('continue')
+            const lastLessonPageNumber = Number(lastLessonPage)
+            setActualPage(lastLessonPageNumber)
+            if (lastLessonPageNumber + 1 === numberOfPages) {
+                setLessonButtonText(`Finalizar`)
+            } else {
+                setLessonButtonText(
+                    `Próximo ${lastLessonPageNumber}/${numberOfPages}`
+                )
+            }
+            nextLessonPage(lastLessonPageNumber)
+        } else if (lessonButtonText === 'Finalizar') {
             // End lesson
             // Set cookies
             SetCookie('lastLesson', props.id)
@@ -68,6 +103,8 @@ export function Lesson(props: LessonInterface) {
             nextLessonPage()
             setLessonButtonText(`Finalizar`)
         } else {
+            console.log('next')
+
             nextLessonPage()
             setLessonButtonText(`Próximo ${actualPage + 1}/${numberOfPages}`)
         }
@@ -81,6 +118,7 @@ export function Lesson(props: LessonInterface) {
             setLessonButtonText(`Iniciar lição`)
             setActualPage(0)
             window.scrollTo(0, 0)
+            setLastPage('')
         } else {
             const page = (
                 <PageLesson lesson={lessonJson} page={actualPage - 2} />
@@ -89,7 +127,20 @@ export function Lesson(props: LessonInterface) {
             setActualPage(actualPage - 1)
             setLessonButtonText(`Próximo ${actualPage - 1}/${numberOfPages}`)
             window.scrollTo(0, 0)
+            setLastPage(actualPage - 1)
         }
+    }
+
+    const setLastPage = (page: Number | string) => {
+        let json
+        try {
+            json = JSON.parse(GetCookie('lastLessonAndPage'))
+        } catch (err) {
+            // cookie is not a json
+            json = {}
+        }
+        json[props.id] = [page, numberOfPages] // [last page, total pages] is used to calculate the percent
+        SetCookie('lastLessonAndPage', JSON.stringify(json))
     }
 
     // while the json not load

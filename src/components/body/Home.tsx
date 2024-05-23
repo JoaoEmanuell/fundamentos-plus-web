@@ -11,6 +11,7 @@ import Image from 'next/image'
 import { LessonPreview } from '../ui/LessonPreview'
 import { AcutalLesson } from '../ui/ActualLesson'
 import { Cycles } from '@/components/body/Cycles'
+import { NumberGreenButtonSquareWithText } from '../ui/NumberGreenButtonSquareWithText'
 
 type elementOrNull = JSX.Element | null
 
@@ -25,6 +26,7 @@ export function HomeComponent() {
     const [cyclesVisible, setCyclesVisible] = useState<'visible' | 'hidden'>(
         'hidden'
     )
+    const [cyclesScroll, setCyclesScroll] = useState<elementOrNull>(null)
     const mainHomeVisibleRef = useRef<HTMLDivElement | null>(null)
 
     const clickHome = () => {
@@ -80,12 +82,20 @@ export function HomeComponent() {
             .then((data) => {
                 const cycles = data['cycles']
                 var lastCycleRegistered
+                const cyclesScrollList: Object[] = []
                 Object.entries(cycles).forEach((element) => {
                     const cycle = element[1] as object
                     if (cycle['unlocked']) {
                         lastCycleRegistered = cycle
                     }
+                    cyclesScrollList.push({
+                        title: cycle['title'],
+                        unlocked: cycle['unlocked'],
+                        numberOfLessons: cycle['lessons'].length,
+                    })
                 })
+                console.log(cyclesScrollList)
+
                 const lastLessonRegistered =
                     lastCycleRegistered['lessons'][
                         lastCycleRegistered['lessons'].length - 1
@@ -103,6 +113,38 @@ export function HomeComponent() {
                             </a>
                         </p>
                     </CenterDiv>
+                )
+                let count = 0
+                setCyclesScroll(
+                    <div className="flex justify-between space-x-4">
+                        {cyclesScrollList.map((cycle) => {
+                            count++
+                            let urlToCycle
+                            if (cycle['unlocked']) {
+                                urlToCycle = `/cycle/${count}`
+                            } else {
+                                urlToCycle = `#`
+                            }
+                            return (
+                                <a
+                                    key={count}
+                                    className="block"
+                                    href={urlToCycle}
+                                >
+                                    <div>
+                                        <NumberGreenButtonSquareWithText
+                                            buttonNumber={count.toString()}
+                                            buttonEnable={cycle['unlocked']}
+                                            text={cycle['title']}
+                                        />
+                                    </div>
+                                    <div className="text-greenText">
+                                        {cycle['numberOfLessons']} Lições
+                                    </div>
+                                </a>
+                            )
+                        })}
+                    </div>
                 )
             })
     }, [])
@@ -135,19 +177,16 @@ export function HomeComponent() {
                     </p>
                     <div>{cycleInformation}</div>
                     <CenterDiv>
-                        <div
-                            className="font-bold text-center cursor-pointer"
-                            onClick={clickCycles}
-                        >
-                            Clique aqui para acessar os ciclos
+                        <div className="overflow-x-auto">
+                            <h2 className="text-xl font-bold mb-4">Ciclos</h2>
+                            <div className="pl-4 md:max-w-xl max-w-[21rem]">
+                                {cyclesScroll}
+                            </div>
                         </div>
                     </CenterDiv>
                 </div>
             </CenterDiv>
-            <CenterDiv
-                className={`${cyclesVisible}`}
-                //style={{ top: cyclesPosition.top, left: cyclesPosition.left }}
-            >
+            <CenterDiv className={`${cyclesVisible}`}>
                 {cyclesVisible === 'hidden' ? null : <Cycles />}
             </CenterDiv>
 
