@@ -3,6 +3,7 @@ export const authorImages = {
     'Edmar Ferreira': '/img/apostolos/edmar-ferreira.webp',
     'Eliseu Moreira': '/img/apostolos/eliseu-moreira.webp',
     'Gilberto Bajo': '/img/apostolos/gilberto-bajo.webp',
+    'Hélio Azevedo': '/img/apostolos/hélio-azevedo.webp',
     'João Bium': '/img/apostolos/joao-bium.webp',
     'Manoel Rocha': '/img/apostolos/manoel-rocha.webp',
     'Marcos Moraes': '/img/apostolos/marcos-moraes.webp',
