@@ -38,7 +38,7 @@ export default function HelpPage() {
                     formatação, assim como exemplos de uso que ajudarão na hora
                     de cadastrar as lições.
                 </p>
-                <CenterDiv>
+                <CenterDiv className="overflow-x-auto">
                     <table className="table-auto mt-4 border border-black">
                         <thead>
                             <tr>
@@ -234,7 +234,10 @@ export default function HelpPage() {
                                 </td>
                                 <td className="px-2 font-mono text-center bg-gray-300 text-black">
                                     header 1 | coluna 1 , coluna 2 | header 2 |
-                                    coluna 3 , coluna 4
+                                    coluna 3 , coluna 4 <br /> Nota: Use {'<'}
+                                    void{'>'}; na linha para criar uma linha
+                                    vazia, isso é usado em tabelas onde só a uma
+                                    linha e múltiplas colunas.
                                 </td>
                                 <td className="px-2">
                                     <div className="flex justify-center">

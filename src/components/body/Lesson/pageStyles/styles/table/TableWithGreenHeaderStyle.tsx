@@ -16,6 +16,8 @@ export function TableWithGreenHeaderStyle(props: StyleInterface) {
         ABC | ABC
         QSD   , ZXA
         QSD   , ZXA
+
+        Note: Use <void> in row to create an empty row, this is used in tables where only one row and multiple columns.
     */
 
     const content = props.content
@@ -52,23 +54,29 @@ export function TableWithGreenHeaderStyle(props: StyleInterface) {
                 </thead>
                 <tbody className="divide-y divide-gray-300">
                     {first_column.map((first_line, index) => {
-                        return (
-                            <tr key={getRandomElementKey()}>
-                                <td className="text-black bg-gray-200 text-center border border-gray-300 p-2 text-sm">
-                                    <Markdown>{first_line}</Markdown>
-                                </td>
-                                {others_columns.map((column) => {
-                                    return (
-                                        <td
-                                            key={getRandomElementKey()}
-                                            className="text-black bg-gray-200 text-center border border-gray-300 p-2 text-sm"
-                                        >
-                                            <Markdown>{column[index]}</Markdown>
-                                        </td>
-                                    )
-                                })}
-                            </tr>
-                        )
+                        if (!first_line.includes('<void>')) {
+                            return (
+                                <tr key={getRandomElementKey()}>
+                                    <td className="text-black bg-gray-200 text-center border border-gray-300 p-2 text-sm">
+                                        <Markdown>{first_line}</Markdown>
+                                    </td>
+                                    {others_columns.map((column) => {
+                                        if (!column[index].includes('<void>')) {
+                                            return (
+                                                <td
+                                                    key={getRandomElementKey()}
+                                                    className="text-black bg-gray-200 text-center border border-gray-300 p-2 text-sm"
+                                                >
+                                                    <Markdown>
+                                                        {column[index]}
+                                                    </Markdown>
+                                                </td>
+                                            )
+                                        }
+                                    })}
+                                </tr>
+                            )
+                        }
                     })}
                 </tbody>
             </table>
