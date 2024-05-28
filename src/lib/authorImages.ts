@@ -8,5 +8,6 @@ export const authorImages = {
     'Manoel Rocha': '/img/apostolos/manoel-rocha.webp',
     'Marcos Moraes': '/img/apostolos/marcos-moraes.webp',
     'Mario Fagundes': '/img/apostolos/mario-fagundes.webp',
+    'Sérgio Avilez': '/img/apostolos/sérgio-avilez.webp',
     'Vanjo Souza': '/img/apostolos/vanjo-souza.webp',
 }
