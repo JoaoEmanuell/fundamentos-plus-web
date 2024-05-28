@@ -34,7 +34,7 @@ export function TableWithGreenHeaderStyle(props: StyleInterface) {
     const others_columns = full_lines.slice(1, full_lines.length)
 
     return (
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto max-w-[21rem] sm:max-w-max">
             <table className="table-fixed border-gray-300 border-2">
                 <thead>
                     <tr>
