@@ -1,5 +1,5 @@
 import { StyleInterface } from '../StyleInterface'
-import Markdown from 'react-markdown'
+import Markdown from '@/components/react-markdown'
 
 export function GreenSubTitleStyle(props: StyleInterface) {
     return (

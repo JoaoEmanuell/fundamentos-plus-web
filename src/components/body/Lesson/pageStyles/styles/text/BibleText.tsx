@@ -2,7 +2,7 @@ import { StyleInterface } from '../StyleInterface'
 import { TextBoldStyle } from './TextBold'
 import { GreenSeparatorStyle } from '../green/GreenSeparator'
 
-import Markdown from 'react-markdown'
+import Markdown from '@/components/react-markdown'
 
 export function BibleTextStyle(props: StyleInterface) {
     /* bible text | reference */

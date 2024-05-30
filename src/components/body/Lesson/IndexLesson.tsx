@@ -5,7 +5,7 @@ import { CenterDiv } from '../../ui/CenterDiv'
 import { NumberGreenButtonWithText } from '../../ui/NumberGreenButtonWithText'
 import { YouTubeIframe } from '../../ui/YouTubeIframe'
 import Image from 'next/image'
-import Markdown from 'react-markdown'
+import Markdown from '@/components/react-markdown'
 
 interface IndexLessonInterface {
     id: string

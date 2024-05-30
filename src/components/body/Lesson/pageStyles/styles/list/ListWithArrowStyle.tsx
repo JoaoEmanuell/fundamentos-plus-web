@@ -3,7 +3,7 @@ import { getRandomElementKey } from '@/lib/randomElementKey'
 
 import { MoveUp, MoveRight, MoveDown, MoveLeft } from 'lucide-react'
 
-import Markdown from 'react-markdown'
+import Markdown from '@/components/react-markdown'
 
 export function ListWithArrowStyle(props: StyleInterface) {
     /* 
