@@ -1,4 +1,4 @@
-import Markdown from 'react-markdown'
+import Markdown from '@/components/react-markdown'
 import { StyleInterface } from '../StyleInterface'
 
 export function GreenBackgroundTitleStyle(props: StyleInterface) {

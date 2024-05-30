@@ -2,7 +2,7 @@ import { getRandomElementKey } from '@/lib/randomElementKey'
 import { StyleInterface } from '../StyleInterface'
 import { Check } from 'lucide-react'
 
-import Markdown from 'react-markdown'
+import Markdown from '@/components/react-markdown'
 
 export function CheckListStyle(props: StyleInterface) {
     /*

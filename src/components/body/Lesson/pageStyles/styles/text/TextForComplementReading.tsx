@@ -1,6 +1,6 @@
 import { StyleInterface } from '../StyleInterface'
 import { CenterDiv } from '@/components/ui/CenterDiv'
-import Markdown from 'react-markdown'
+import Markdown from '@/components/react-markdown'
 
 export function TextForComplementReadingStyle(props: StyleInterface) {
     const text = props.content.replaceAll(' | ', ' **|** ')

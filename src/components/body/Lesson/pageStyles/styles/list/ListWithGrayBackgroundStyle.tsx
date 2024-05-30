@@ -1,7 +1,7 @@
 import { StyleInterface } from '../StyleInterface'
 import { getRandomElementKey } from '@/lib/randomElementKey'
 
-import Markdown from 'react-markdown'
+import Markdown from '@/components/react-markdown'
 
 export function ListWithGrayBackgroundStyle(props: StyleInterface) {
     /* 
