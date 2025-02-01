@@ -12,12 +12,16 @@ interface LessonPreviewInterface {
     id: string
     author:
         | 'Benito Lopez'
+        | 'Cesar Damasceno'
         | 'Edmar Ferreira'
+        | 'Eliseu Moreira'
         | 'Gilberto Bajo'
+        | 'Hélio Azevedo'
         | 'João Bium'
         | 'Manoel Rocha'
         | 'Marcos Moraes'
         | 'Mario Fagundes'
+        | 'Sérgio Avillez'
         | 'Vanjo Souza'
     completedLesson: boolean
 }

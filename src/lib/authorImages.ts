@@ -1,5 +1,6 @@
 export const authorImages = {
     'Benito Lopez': '/img/apostolos/benito-lopez.webp',
+    'Cesar Damasceno': '/img/apostolos/cesar-damasceno.webp',
     'Edmar Ferreira': '/img/apostolos/edmar-ferreira.webp',
     'Eliseu Moreira': '/img/apostolos/eliseu-moreira.webp',
     'Gilberto Bajo': '/img/apostolos/gilberto-bajo.webp',
