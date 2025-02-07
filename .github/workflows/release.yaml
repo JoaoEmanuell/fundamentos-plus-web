@@ -1,0 +1,62 @@
+name: Fundamentos Plus Web Release
+# credits: https://github.com/jaanonim/obsidian-youversion-linker/blob/master/.github/workflows/release.yaml
+# credits: https://github.com/scambier/obsidian-omnisearch/blob/master/.github/workflows/release.yml
+
+env:
+    VERSION: 1.0.1
+
+on: [workflow_dispatch]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        permissions: write-all
+
+        strategy:
+            matrix:
+                node-version: [18.x]
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v2
+              with:
+                  submodules: recursive
+
+            - uses: pnpm/action-setup@v4.0.0
+              with:
+                  version: 8.15.9
+                  run_install: true
+
+            - name: Use Node.js
+              uses: actions/setup-node@v1
+              with:
+                  node-version: "18.x"
+
+            - name: Create Release
+              id: create_release
+              uses: actions/create-release@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  VERSION: ${{ env.VERSION }}
+              with:
+                  tag_name: ${{ env.VERSION  }}
+                  release_name: ${{ env.VERSION  }}
+                  draft: false
+                  prerelease: false
+
+            - name: Create data.zip
+              id: zip
+              run: |
+                  cd ./public
+                  zip -r data ./assets/lessons_images ./data
+
+            - name: Upload data.zip
+              id: upload-zip
+              uses: actions/upload-release-asset@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  upload_url: ${{ steps.create_release.outputs.upload_url }}
+                  asset_path: ./public/data.zip
+                  asset_name: data.zip
+                  asset_content_type: application/zip
